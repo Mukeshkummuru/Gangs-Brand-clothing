@@ -18,7 +18,7 @@ const SearchPage = () => {
   }, []);
 
   const fetchResults = (query, category) => {
-    fetch(`http://localhost:5000/api/products?query=${query}&category=${category}`)
+    fetch(`https://gangs-backend.onrender.com/api/products?query=${query}&category=${category}`)
       .then((response) => response.json())
       .then((responseData) => {
         // ✅ Access the `data` property from the response

@@ -24,7 +24,7 @@ const RegisterPage = () => {
     }
 
     try {
-      const response = await axios.post('http://localhost:5000/api/auth/register', {
+      const response = await axios.post('https://gangs-backend.onrender.com/api/auth/register', {
         name,
         email,
         password

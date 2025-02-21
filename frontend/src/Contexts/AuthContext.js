@@ -17,7 +17,7 @@ export const AuthProvider = ({ children }) => {
     if (!token) return;
 
     try {
-      const response = await axios.get('http://localhost:5000/api/auth/verify', {
+      const response = await axios.get('https://gangs-backend.onrender.com/api/auth/verify', {
         headers: { Authorization: `Bearer ${token}` }
       });
       setUser(response.data.user);

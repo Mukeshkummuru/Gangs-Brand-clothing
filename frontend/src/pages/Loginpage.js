@@ -18,7 +18,7 @@ const LoginPage = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:5000/api/auth/login', { email, password });
+      const response = await axios.post('https://gangs-backend.onrender.com/api/auth/login', { email, password });
 
       localStorage.setItem("token", response.data.token);
       setUser({ token: response.data.token });

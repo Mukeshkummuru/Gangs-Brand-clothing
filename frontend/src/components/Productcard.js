@@ -13,7 +13,7 @@ const ProductCard = ({ product }) => {
     if (!user) {
       setShowLoginPrompt(true); // Show login modal if not logged in
     } else {
-      navigate(`/product/${product.id}`); // Navigate to product details
+      navigate(`/product/${product._id}`); // Navigate to product details
     }
   };
 

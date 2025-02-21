@@ -3,6 +3,7 @@ const express = require("express");
 const cors = require("cors");
 const path = require("path");
 const mongoose = require("mongoose");
+const fs = require("fs");
 
 const Product = require("./models/Product"); // Import Product model
 const productRoutes = require("./routes/Productroutes");
@@ -26,15 +27,14 @@ mongoose.connect(process.env.MONGODB_URI)
     .then(async () => {
         console.log("✅ Connected to MongoDB");
         await seedProducts(); // Insert products into MongoDB
+        await updateImageUrls(); // Update image URLs in MongoDB
     })
     .catch(err => console.error("❌ MongoDB connection error:", err));
 
-// ✅ Function to insert products into MongoDB (optional, for initial setup)
+// ✅ Function to insert products.json data into MongoDB
 const seedProducts = async () => {
     try {
-        const productsData = [
-            // Add your product data here or fetch from an external source
-        ];
+        const productsData = JSON.parse(fs.readFileSync(path.join(__dirname, "products.json"), "utf-8"));
 
         for (let product of productsData) {
             const existingProduct = await Product.findOne({ id: product.id });
@@ -48,6 +48,20 @@ const seedProducts = async () => {
         }
     } catch (error) {
         console.error("❌ Error inserting products:", error);
+    }
+};
+
+// ✅ Function to update image URLs in MongoDB
+const updateImageUrls = async () => {
+    try {
+        const products = await Product.find();
+        for (let product of products) {
+            product.images = product.images.map(img => img.startsWith("http") ? img : `${process.env.BASE_URL}${img}`);
+            await product.save();
+            console.log(`✅ Updated image URLs for product: ${product.name}`);
+        }
+    } catch (error) {
+        console.error("❌ Error updating image URLs:", error);
     }
 };
 

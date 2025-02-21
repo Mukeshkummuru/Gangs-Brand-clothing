@@ -2,11 +2,13 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import ProductCard from "../components/Productcard";
 import './PagesCSS/ProductPage.css';
+import { useParams } from 'react-router-dom';
 
 const RelatedProducts = ({ productId }) => {
   const [relatedProducts, setRelatedProducts] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
+  const { id } = useParams();
 
 useEffect(() => {
   window.scrollTo(0, 0); // Scroll to the top when the component mounts
@@ -18,7 +20,7 @@ useEffect(() => {
 
       try {
         const response = await axios.get(
-          `http://localhost:5000/api/products/related/${productId}`
+          `https://gangs-backend.onrender.com/api/products/related/${id}`
         );
         setRelatedProducts(response.data);
       } catch (err) {
@@ -30,7 +32,7 @@ useEffect(() => {
     };
 
     fetchRelatedProducts();
-  }, [productId]);
+  }, [id,productId]);
 
 
   return (

@@ -94,7 +94,7 @@ const Productslide = ({ products }) => {
                 <h2 className="product-category-title">{category}</h2>
                 <div className="product-grid">
                   {visibleProducts.map((product) => (
-                    <ProductCard key={product.id} product={product} />
+                    <ProductCard key={product._id} product={product} />
                   ))}
                 </div>
                 {categoryProducts.length > 5 && (

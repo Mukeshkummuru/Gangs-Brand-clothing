@@ -35,7 +35,6 @@ const getAllProducts = async (req, res) => {
     }
 };
 
-// ✅ Get Product By ID
 const getProductById = async (req, res) => {
     try {
         const { id } = req.params;
@@ -46,6 +45,7 @@ const getProductById = async (req, res) => {
         const product = await Product.findById(id);
         if (!product) return res.status(404).json({ error: "Product not found" });
 
+        // Transform image URLs
         res.json({
             ...product._doc,
             images: product.images.map(img => img.startsWith("http") ? img : `${process.env.BASE_URL}${img}`)
@@ -55,7 +55,6 @@ const getProductById = async (req, res) => {
     }
 };
 
-// ✅ Get Related Products
 const getRelatedProducts = async (req, res) => {
     try {
         const { productId } = req.params;
@@ -68,7 +67,13 @@ const getRelatedProducts = async (req, res) => {
 
         const relatedProducts = await Product.find({ category: mainProduct.category, _id: { $ne: mainProduct._id } }).limit(4);
 
-        res.json(relatedProducts);
+        // Transform image URLs
+        const transformedProducts = relatedProducts.map(product => ({
+            ...product._doc,
+            images: product.images.map(img => img.startsWith("http") ? img : `${process.env.BASE_URL}${img}`)
+        }));
+
+        res.json(transformedProducts);
     } catch (error) {
         res.status(500).json({ error: "Server error", details: error.message });
     }
