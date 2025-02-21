@@ -1,3 +1,5 @@
+/* eslint-disable no-restricted-globals */
+
 const CACHE_NAME = 'v1';
 
 self.addEventListener('install', (event) => {
