@@ -3,10 +3,9 @@ const express = require("express");
 const cors = require("cors");
 const path = require("path");
 const mongoose = require("mongoose");
-const fs = require("fs");
 
 const Product = require("./models/Product"); // Import Product model
-const productRoutes = require("./routes/Productroutes");
+const productRoutes = require("./routes/productRoutes");
 const authRoutes = require("./routes/auth");
 
 const app = express();
@@ -30,10 +29,12 @@ mongoose.connect(process.env.MONGODB_URI)
     })
     .catch(err => console.error("❌ MongoDB connection error:", err));
 
-// ✅ Function to insert products.json data into MongoDB
+// ✅ Function to insert products into MongoDB (optional, for initial setup)
 const seedProducts = async () => {
     try {
-        const productsData = JSON.parse(fs.readFileSync(path.join(__dirname, "products.json"), "utf-8"));
+        const productsData = [
+            // Add your product data here or fetch from an external source
+        ];
 
         for (let product of productsData) {
             const existingProduct = await Product.findOne({ id: product.id });

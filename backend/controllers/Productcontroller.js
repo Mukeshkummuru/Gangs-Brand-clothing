@@ -1,3 +1,4 @@
+const mongoose = require("mongoose");
 const Product = require("../models/Product");
 
 // ✅ Get All Products from MongoDB
@@ -6,7 +7,7 @@ const getAllProducts = async (req, res) => {
         const { query, category, page = 1, limit = 20 } = req.query;
         let products = await Product.find();
 
-        // Transform image URLs (only needed if they are stored locally)
+        // Transform image URLs
         products = products.map(product => ({
             ...product._doc,
             images: product.images.map(img => img.startsWith("http") ? img : `${process.env.BASE_URL}${img}`)
