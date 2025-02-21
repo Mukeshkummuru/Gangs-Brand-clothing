@@ -5,7 +5,7 @@ const path = require("path");
 const mongoose = require("mongoose");
 
 const Product = require("./models/Product"); // Import Product model
-const productRoutes = require("./routes/productRoutes");
+const productRoutes = require("./routes/Productroutes");
 const authRoutes = require("./routes/auth");
 
 const app = express();
