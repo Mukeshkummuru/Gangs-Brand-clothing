@@ -1,0 +1,322 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+/* Base styles */
+.buy-now-page {
+font-family: 'DM Sans', sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #fafafa;
+}
+
+.buy-now-page h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #0a0a0a;
+  margin-bottom: 2rem;
+  letter-spacing: -0.5px;
+  animation: slideDown 0.5s ease-out;
+}
+
+/* Checkout container */
+.checkout-container {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 2rem;
+  animation: fadeIn 0.6s ease-out;
+}
+
+/* Delivery details section */
+.delivery-details {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.03);
+}
+
+.delivery-details h2 {
+  font-size: 1.5rem;
+  color: #0a0a0a;
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.3px;
+}
+
+/* Form styles */
+.form-new{
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+/* Only apply these styles in the BuyNowPage */
+.buy-now-page input[type="text"],
+.buy-now-page input[type="email"],
+.buy-now-page input[type="tel"],
+.buy-now-page textarea {
+  width: 90%;
+  padding: 15px;
+  border: 1.5px solid #e0e0e0;
+  border-radius: 8px;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+
+input:focus,
+textarea:hover {
+  outline: none;
+  border-color: #0a0a0a;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transform: translateY(-2px);
+}
+
+textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+/* Payment methods section */
+.payment-methods {
+  background: #f8f8f8;
+  padding: 1.5rem;
+  border-radius: 12px;
+  margin-top: 1rem;
+}
+
+.payment-methods h3 {
+  font-size: 1.2rem;
+  color: #0a0a0a;
+  margin-bottom: 1rem;
+}
+
+.payment-methods label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.8rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border-radius: 8px;
+}
+
+.payment-methods label:hover {
+  background: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+input[type="radio"] {
+  width: 18px;
+  height: 18px;
+  accent-color: #0a0a0a;
+}
+
+/* Place order button */
+.place-order-button {
+  background: #0a0a0a;
+  color: white;
+  padding: 1.2rem;
+  border: none;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 600;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 1rem;
+  letter-spacing: -0.3px;
+}
+
+.place-order-button:hover {
+  background: #1a1a1a;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Order summary section */
+.order-summary {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.03);
+  height: fit-content;
+  position: sticky;
+  top: 2rem;
+}
+
+.order-summary h2 {
+  font-size: 1.5rem;
+  color: #0a0a0a;
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.3px;
+}
+
+/* Order item styles */
+.order-item {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid #f0f0f0;
+  transition: all 0.3s ease;
+}
+
+.order-item:hover {
+  transform: translateX(4px);
+}
+
+.order-item img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.order-item:hover img {
+  transform: scale(1.05);
+}
+
+.item-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.item-info h4 {
+  font-size: 1.1rem;
+  color: #0a0a0a;
+  margin: 0;
+}
+
+.item-info p {
+  color: #404040;
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+/* Total amount section */
+.total-amount {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 2px solid #f0f0f0;
+}
+
+.total-amount h3 {
+  font-size: 1.3rem;
+  color: #0a0a0a;
+  text-align: right;
+}
+
+/* Animations */
+@keyframes slideDown {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .checkout-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .order-summary {
+    position: static;
+    margin-top: 2rem;
+  }
+  
+  .buy-now-page {
+    padding: 1rem;
+  }
+}
+
+/* Loading state for button */
+.place-order-button:active {
+  transform: scale(0.98);
+}
+
+/* Focus styles for accessibility */
+*:focus-visible {
+  outline: 2px solid #0a0a0a;
+  outline-offset: 2px;
+}
+
+---------------------------------------------------------------------------------------------------------
+
+/* SavedAddresses.css */
+.saved-addresses {
+  margin: 20px 0;
+}
+
+.saved-addresses h4 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.address-field {
+  width: 80%;
+  padding: 12px 12px;
+  margin: 8px 0;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  color: #000;
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.address-field:hover {
+  border-color: #464545;
+  background-color: #f8f8f8;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.address-field:active {
+  transform: translateY(1px);
+  background-color: #f0f0f0;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Ripple effect */
+.address-field::after {
+  content: '';
+  position: absolute;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  transform: scale(0);
+  animation: ripple 0.6s linear;
+  opacity: 1;
+}
+
+@keyframes ripple {
+  to {
+    transform: scale(4);
+    opacity: 0;
+  }
+}
+
+.no-addresses {
+  color: #666;
+  font-style: italic;
+  padding: 10px 0;
+}

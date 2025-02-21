@@ -1,0 +1,222 @@
+/* addressPage.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+.address-slider {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 400px;
+  height: 100vh;
+  background: white;
+  box-shadow: -4px 0 15px rgba(0, 0, 0, 0.1);
+  transition: right 0.3s ease-in-out;
+  z-index: 1000;
+  font-family: 'Poppins', sans-serif;
+}
+
+.address-slider.open {
+  right: 0;
+  animation: slideIn 0.3s ease-in-out;
+}
+
+@keyframes slideIn {
+  from { right: -100%; }
+  to { right: 0; }
+}
+
+.address-slider-content {
+  height: 100%;
+  overflow-y: auto;
+} 
+
+.address-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px; /* Ensure the header has its padding */
+  background-color: #333;
+  color: #fff;
+  height: 63px;
+  margin: 0;
+}
+
+.address-header h3 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #fff;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+ 
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: #fff;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 50%;
+  transition: all 0.2s ease;
+}
+
+.close-btn:hover {
+  color: #ff6f61;
+  transform: rotate(90deg);
+}
+
+.address-item {
+  background: #f8f8f8;
+  padding: 10px;
+  margin-bottom: 16px;
+  transition: all 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 2%;
+  padding-right: 0;
+   
+}
+
+.address-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.address-item p {
+  font-size: 16px;
+  color: #333;
+  margin: 0;
+  line-height: 1.5;
+  word-wrap: break-word;
+ }
+
+ .address-item input {
+  width: 90%;  /* Reduce width for better alignment */
+  padding: 6px 10px; /* Reduce padding */
+  border: 1px solid #ddd;
+  font-size: 14px; /* Slightly smaller font */
+  margin: 5px auto; /* Center the fields */
+  height: 45px; /* Reduce height */
+}
+
+.address-item input:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  border-color: #666;
+}
+
+.address-item textarea {
+  width: 90%; /* Address field should remain wide */
+  padding: 10px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  font-family: 'Poppins', sans-serif;
+  transition: border-color 0.2s ease;
+  height: auto;
+  resize: vertical;
+  min-height: 80px; /* Reduce height */
+  line-height: 1.4;
+}
+
+
+.address-item input:focus {
+  border-color: #666;
+}
+
+.edit-btn, .delete-btn, .save-btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-family: 'Poppins', sans-serif;
+}
+
+.edit-btn {
+  background: #e0e0e0;
+  color: #333;
+  max-width: 90%;
+  position: relative;
+  left: 4%;
+}
+
+.edit-btn:hover {
+  background: #d0d0d0;
+}
+
+.delete-btn {
+  background: #ff4d4d;
+  color: white;
+  max-width: 90%;
+  position: relative;
+  left: 4%;
+}
+
+.delete-btn:hover {
+  background: #ff3333;
+}
+
+.save-btn {
+  background: #4CAF50;
+  color: white;
+  width: fit-content;
+  display: block;
+  padding: 10px 20px; /* Ensure proper button padding */
+}
+
+.save-btn:hover {
+  background: #45a049;
+}
+
+/* Button container */
+.button-group {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.address-item {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Scrollbar styling */
+.address-slider-content::-webkit-scrollbar {
+  width: 8px;
+}
+
+.address-slider-content::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+.address-slider-content::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 4px;
+}
+
+.address-slider-content::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+ @media (max-width: 480px) {
+  .address-slider{
+    width: 80%;
+    height: 100%;
+  }
+  .address-item input {
+    padding: 10px 10px;
+  }
+  .address-header{
+    font-size: 10;
+  }
+} 

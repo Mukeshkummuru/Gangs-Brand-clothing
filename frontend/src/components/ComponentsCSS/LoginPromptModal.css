@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Pacifico&family=Playfair+Display:wght@600&family=Poppins:wght@500&family=Caveat:wght@600&display=swap');
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    animation: fadeIn 0.3s ease-in-out;
+  }
+  
+  .modal-content {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 400px;
+    transform: translateY(0);
+    animation: slideUp 0.3s ease-out;
+  }
+  
+  .modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;  
+  }
+  
+  .modal-header h2 {
+    margin: 0;
+    font-size: 1.5rem;
+   
+  }
+  
+  .close-btn {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #666;
+  }
+  
+  .modal-body h5 {
+    text-align: center;
+    margin-bottom: 10%;
+    font-family: 'Caveat', cursive;
+    font-size: 20px;
+    font-weight: lighter;
+  }
+
+  .modal-body p {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 15px;
+  }
+  
+  
+  .modal-actions {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 3rem;
+  }
+  
+  .login-btn, .signup-btn {
+    flex: 1;
+    padding: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.4s ease;
+  }
+  
+  .login-btn {
+    background: #000;
+    color: white;
+  }
+
+  
+  .signup-btn {
+    background: #eee;
+    color: #000;
+  }
+  
+  .login-btn:hover, .signup-btn:hover {
+    transform: translateY(-2px);
+    background: #000;
+    color: white;
+  }
+  
+  .continue-text {
+    text-align: center;
+    color: #666;
+    cursor: pointer;
+  }
+  
+  .continue-text span {
+    color: #000;
+    text-decoration: underline;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  @keyframes slideUp {
+    from { transform: translateY(20px); }
+    to { transform: translateY(0); }
+  }

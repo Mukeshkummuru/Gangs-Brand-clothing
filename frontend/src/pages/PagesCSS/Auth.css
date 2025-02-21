@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Global Styles */
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;600&display=swap");
+
+/* Import a modern font */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap");
+
+ 
+/* Auth Container */
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: fadeSlide 0.6s ease-out forwards;
+  padding-top: 0;
+}
+
+/* Fade-in and Slide-down Animation */
+@keyframes fadeSlide {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Form Card */
+.auth-card {
+  width: 100%;
+  max-width: 360px;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  transition: 0.3s;
+  margin-top: -10%;
+}
+
+.auth-card h2 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.auth-card p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* Input Fields */
+.input-group {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.input-group input {
+  width: 90%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: all 0.3s;
+  outline: none;
+  background: transparent;
+  color: #222;
+}
+
+.input-group input:focus {
+  border-color: #222;
+  transform: scale(1.02);
+}
+
+.input-group input::placeholder {
+  color: #000;
+  letter-spacing: 1px;
+  font-family:'poppins';
+  opacity: 80%;
+}
+
+/* Floating Label Effect */
+.input-group label {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 14px;
+  color: #888;
+  transition: 0.3s;
+  pointer-events: none;
+}
+
+.input-group input:focus + label,
+.input-group input:not(:placeholder-shown) + label {
+  top: 5px;
+  font-size: 12px;
+  color: #333;
+}
+
+/* Button */
+.auth-button {
+  width: 80%; /* Adjust width of the button */
+  max-width: 350px;
+  padding: 12px;
+  background: #222;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+
+.auth-button:hover {
+  background: #111;
+}
+
+/* Auth Links */
+.auth-links {
+  margin-top: 25px; /* Increased space */
+  display: flex;
+  flex-direction: column;
+  gap: 12px; /* Spacing between links */
+}
+
+.auth-links a {
+  font-size: 14px;
+  color: #444; /* Changed from white */
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.auth-links a:hover {
+  color: #000;
+}
+
+/* Subtle Button Animation */
+.auth-button::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300%;
+  height: 300%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.2) 10%, transparent 60%);
+  transition: 0.5s;
+  transform: translate(-50%, -50%) scale(0);
+}
+
+.auth-button:hover::before {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+ 
+ 

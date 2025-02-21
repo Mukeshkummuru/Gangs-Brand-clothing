@@ -1,0 +1,382 @@
+[
+    {
+        "id": 1,
+        "name": "Freedom off-white sweatshirt",
+        "price": 699,
+        "original_price": 1499,
+        "images": ["/gangsimages/mukesh1.webp", "/gangsimages/mukesh2.webp", "/gangsimages/mukesh3.webp"],
+        "category": "sweatshirts",
+        "sizes": ["28", "30", "32", "34", "36", "38"],
+        "description": "Product Description: Experience unmatched comfort and timeless style with this premium-quality apparel, crafted from the finest materials for a relaxed fit and all-day wear.",
+        "product_details": [
+            "High-quality fabric for durability and comfort",
+            "Tailored fit for a modern and stylish look",
+            "Breathable and lightweight material",
+            "Machine washable for easy maintenance",
+            "Versatile design suitable for multiple occasions"
+        ],
+        "type": ["new arrivals,winter collection"]
+    },
+    {
+        "id": 2,
+        "name": "Black Denim Jacket",
+        "price": 1099,
+        "original_price": 1499,
+        "images": ["/gangsimages/varun3.webp", "/gangsimages/varun2.webp","/gangsimages/varun1.webp"],
+        "category": "jackets",
+        "sizes": ["28", "30", "32", "34", "36", "38"],
+        "description": "Product Description: Experience unmatched comfort and timeless style with this premium-quality apparel, crafted from the finest materials for a relaxed fit and all-day wear.",
+        "product_details": [
+            "High-quality fabric for durability and comfort",
+            "Tailored fit for a modern and stylish look",
+            "Breathable and lightweight material",
+            "Machine washable for easy maintenance",
+            "Versatile design suitable for multiple occasions"
+        ],
+        "type": ["Best of gangs,winter collection"]
+          
+    },
+    {
+        "id": 3,
+        "name": "Brown Bell-Bottom Trouser",
+        "price": 999,
+        "original_price": 1499,
+        "images": ["/gangsimages/varun12.webp", "/gangsimages/varun13.webp"],
+        "category": "pants",
+        "sizes": ["28", "30", "32", "34", "36", "38"],
+        "description": "Product Description: Experience unmatched comfort and timeless style with this premium-quality apparel, crafted from the finest materials for a relaxed fit and all-day wear.",
+        "product_details": [
+            "High-quality fabric for durability and comfort",
+            "Tailored fit for a modern and stylish look",
+            "Breathable and lightweight material",
+            "Machine washable for easy maintenance",
+            "Versatile design suitable for multiple occasions"
+        ],
+        "type": ["new arrivals"]
+    },
+    {
+        "id": 4,
+        "name": "Plain Black-Double-Pocket Shirt",
+        "price": 699,
+        "images": ["/gangsimages/mukesh4.webp", "/gangsimages/mukesh6.webp", "/gangsimages/mukesh5.webp"],
+        "category": "shirts",
+        "sizes": ["28", "30", "32", "34", "36", "38"],
+        "original_price": 1499,
+        "description": "Product Description: Experience unmatched comfort and timeless style with this premium-quality apparel, crafted from the finest materials for a relaxed fit and all-day wear.",
+        "product_details": [
+            "High-quality fabric for durability and comfort",
+            "Tailored fit for a modern and stylish look",
+            "Breathable and lightweight material",
+            "Machine washable for easy maintenance",
+            "Versatile design suitable for multiple occasions"
+        ],
+        "type": [" new arrivals"]
+
+    },
+    {
+        "id": 5,
+        "name": "Aque-bule Releaxed fit Sweatshirt",
+        "price": 1099,
+        "images": ["/gangsimages/varun4.webp", "/gangsimages/varun5.webp", "/gangsimages/varun6.webp"],
+        "category": "sweatshirts",
+        "sizes": ["28", "30", "32", "34", "36", "38"],
+        "original_price": 1499,
+        "description": "Product Description: Experience unmatched comfort and timeless style with this premium-quality apparel, crafted from the finest materials for a relaxed fit and all-day wear.",
+        "product_details": [
+            "High-quality fabric for durability and comfort",
+            "Tailored fit for a modern and stylish look",
+            "Breathable and lightweight material",
+            "Machine washable for easy maintenance",
+            "Versatile design suitable for multiple occasions"
+        ],
+        "type": ["Best of gangs,winter collection"]
+
+    },
+    {
+        "id": 6,
+        "name": "Beige-brown Checked Shirt",
+        "price": 799,
+        "images": ["/gangsimages/aji2.webp",  "/gangsimages/aji1.webp"],
+        "category": "shirts",
+        "sizes": ["28", "30", "32", "34", "36", "38"],
+        "original_price": 1499,
+        "description": "Product Description: Experience unmatched comfort and timeless style with this premium-quality apparel, crafted from the finest materials for a relaxed fit and all-day wear.",
+        "product_details": [
+            "High-quality fabric for durability and comfort",
+            "Tailored fit for a modern and stylish look",
+            "Breathable and lightweight material",
+            "Machine washable for easy maintenance",
+            "Versatile design suitable for multiple occasions"
+        ],
+        "type": [" new arrivals,buy 1 get 1"]
+
+    },
+    {
+        "id": 7,
+        "name": "Plain White Shirt",
+        "price": 799,
+        "images": ["/gangsimages/aji5.webp", "/gangsimages/aji4.webp", "/gangsimages/aji3.webp"],
+        "category": "shirts",
+        "sizes": ["28", "30", "32", "34", "36", "38"],
+        "original_price": 1499,
+        "description": "Product Description: Experience unmatched comfort and timeless style with this premium-quality apparel, crafted from the finest materials for a relaxed fit and all-day wear.",
+        "product_details": [
+            "High-quality fabric for durability and comfort",
+            "Tailored fit for a modern and stylish look",
+            "Breathable and lightweight material",
+            "Machine washable for easy maintenance",
+            "Versatile design suitable for multiple occasions"
+        ],
+        "type": [" new arrivals,buy 1 get 1"]
+
+    },
+    {
+        "id": 8,
+        "name": "Plain Beige Trouser",
+        "price": 799,
+        "images": ["/gangsimages/mukesh17.webp", "/gangsimages/mukesh16.webp"],
+        "category": "Phants",
+        "sizes": ["28", "30", "32", "34", "36", "38"],
+        "original_price": 1499,
+        "description": "Product Description: Experience unmatched comfort and timeless style with this premium-quality apparel, crafted from the finest materials for a relaxed fit and all-day wear.",
+        "product_details": [
+            "High-quality fabric for durability and comfort",
+            "Tailored fit for a modern and stylish look",
+            "Breathable and lightweight material",
+            "Machine washable for easy maintenance",
+            "Versatile design suitable for multiple occasions"
+        ],
+        "type": ["Best of gangs,new arrivals"]
+
+
+    },
+    {
+        "id": 9,
+        "name": "Black Floral Beach Shirt",
+        "price": 799,
+        "images": ["/gangsimages/mukesh14.webp", "/gangsimages/mukesh13.webp", "/gangsimages/mukesh15.webp"],
+        "category": "shirts",
+        "sizes": ["28", "30", "32", "34", "36", "38"],
+        "original_price": 1499,
+        "description": "Product Description: Experience unmatched comfort and timeless style with this premium-quality apparel, crafted from the finest materials for a relaxed fit and all-day wear.",
+        "product_details": [
+            "High-quality fabric for durability and comfort",
+            "Tailored fit for a modern and stylish look",
+            "Breathable and lightweight material",
+            "Machine washable for easy maintenance",
+            "Versatile design suitable for multiple occasions"
+        ],
+        "type": ["Best of gangs,new arrivals"]
+
+    },
+    {
+        "id": 10,
+        "name": "Brown Printed Shirt",
+        "price": 899,
+        "images": ["/gangsimages/aji6.webp", "/gangsimages/aji7.webp"],
+        "category": "shirts",
+        "sizes": ["28", "30", "32", "34", "36", "38"],
+        "original_price": 1499,
+        "description": "Product Description: Experience unmatched comfort and timeless style with this premium-quality apparel, crafted from the finest materials for a relaxed fit and all-day wear.",
+        "product_details": [
+            "High-quality fabric for durability and comfort",
+            "Tailored fit for a modern and stylish look",
+            "Breathable and lightweight material",
+            "Machine washable for easy maintenance",
+            "Versatile design suitable for multiple occasions"
+        ],
+        "type": [" new arrivals"]
+
+    },
+    {
+        "id": 11,
+        "name": "Floral Shirt",
+        "price": 699,
+        "images": ["/gangsimages/bunkat2.webp", "/gangsimages/bunkat1.webp"],
+        "category": "shirts",
+        "sizes": ["28", "30", "32", "34", "36", "38"],
+        "original_price": 1499,
+        "description": "Product Description: Experience unmatched comfort and timeless style with this premium-quality apparel, crafted from the finest materials for a relaxed fit and all-day wear.",
+        "product_details": [
+            "High-quality fabric for durability and comfort",
+            "Tailored fit for a modern and stylish look",
+            "Breathable and lightweight material",
+            "Machine washable for easy maintenance",
+            "Versatile design suitable for multiple occasions"
+        ],
+        "type": ["Best of gangs"]
+
+    },
+    {
+        "id": 12,
+        "name": "Peach Green Double-pocket-Shirt",
+        "price": 899,
+        "images": ["/gangsimages/aji8.webp", "/gangsimages/aji9.webp"],
+        "category": "shirts",
+        "sizes": ["28", "30", "32", "34", "36", "38"],
+        "original_price": 1499,
+        "description": "Product Description: Experience unmatched comfort and timeless style with this premium-quality apparel, crafted from the finest materials for a relaxed fit and all-day wear.",
+        "product_details": [
+            "High-quality fabric for durability and comfort",
+            "Tailored fit for a modern and stylish look",
+            "Breathable and lightweight material",
+            "Machine washable for easy maintenance",
+            "Versatile design suitable for multiple occasions"
+        ],
+        "type": ["Best of gangs, buy 1 get 1"]
+
+    },
+    {
+        "id": 13,
+        "name": "Black Plain Polo T-Shirt",
+        "price": 799,
+        "images": ["/gangsimages/aji10.webp", "/gangsimages/aji11.webp"],
+        "category": "t-shirts",
+        "sizes": ["28", "30", "32", "34", "36", "38"],
+        "original_price": 1499,
+        "description": "Product Description: Experience unmatched comfort and timeless style with this premium-quality apparel, crafted from the finest materials for a relaxed fit and all-day wear.",
+        "product_details": [
+            "High-quality fabric for durability and comfort",
+            "Tailored fit for a modern and stylish look",
+            "Breathable and lightweight material",
+            "Machine washable for easy maintenance",
+            "Versatile design suitable for multiple occasions"
+        ],
+        "type": [" new arrivals,winter collection"]
+
+    },
+    {
+        "id": 14,
+        "name": "Pink Realexed fit T-shirt",
+        "price": 499,
+        "images": ["/gangsimages/varun16.webp", "/gangsimages/varun15.webp", "/gangsimages/varun14.webp"],
+        "category": "t-shirts",
+        "sizes": ["28", "30", "32", "34", "36", "38"],
+        "original_price": 1499,
+        "description": "Product Description: Experience unmatched comfort and timeless style with this premium-quality apparel, crafted from the finest materials for a relaxed fit and all-day wear.",
+        "product_details": [
+            "High-quality fabric for durability and comfort",
+            "Tailored fit for a modern and stylish look",
+            "Breathable and lightweight material",
+            "Machine washable for easy maintenance",
+            "Versatile design suitable for multiple occasions"
+        ],
+        "type": ["winter collection,buy 1 get 1"]
+
+    },
+    {
+        "id": 15,
+        "name": "Printed Realexed-Fit T-Shirt",
+        "price": 499,
+        "images": ["/gangsimages/mukesh12.webp", "/gangsimages/mukesh11.webp", "/gangsimages/mukesh10.webp"],
+        "category": "t-shirts",
+        "sizes": ["28", "30", "32", "34", "36", "38"],
+        "original_price": 1499,
+        "description": "Product Description: Experience unmatched comfort and timeless style with this premium-quality apparel, crafted from the finest materials for a relaxed fit and all-day wear.",
+        "product_details": [
+            "High-quality fabric for durability and comfort",
+            "Tailored fit for a modern and stylish look",
+            "Breathable and lightweight material",
+            "Machine washable for easy maintenance",
+            "Versatile design suitable for multiple occasions"
+        ],
+        "type": [" new arrivals,winter collection"]
+
+    },
+    {
+        "id": 16,
+        "name": "Brown Suede Jacket",
+        "price": 1099,
+        "images": ["/gangsimages/varun8.webp", "/gangsimages/varun7.webp", "/gangsimages/varun9.webp"],
+        "category": "jackets",
+        "sizes": ["28", "30", "32", "34", "36", "38"],
+        "original_price": 1499,
+        "description": "Product Description: Experience unmatched comfort and timeless style with this premium-quality apparel, crafted from the finest materials for a relaxed fit and all-day wear.",
+        "product_details": [
+            "High-quality fabric for durability and comfort",
+            "Tailored fit for a modern and stylish look",
+            "Breathable and lightweight material",
+            "Machine washable for easy maintenance",
+            "Versatile design suitable for multiple occasions"
+        ],
+        "type": ["winter collection,buy 1 get 1"]
+
+    },
+    {
+        "id": 17,
+        "name": "Brown plain Chinos",
+        "price": 799,
+        "images": ["/gangsimages/s4.webp", "/gangsimages/s5.webp", "/gangsimages/s6.webp"],
+        "category": "Phants",
+        "sizes": ["28", "30", "32", "34", "36", "38"],
+        "original_price": 1499,
+        "description": "Product Description: Experience unmatched comfort and timeless style with this premium-quality apparel, crafted from the finest materials for a relaxed fit and all-day wear.",
+        "product_details": [
+            "High-quality fabric for durability and comfort",
+            "Tailored fit for a modern and stylish look",
+            "Breathable and lightweight material",
+            "Machine washable for easy maintenance",
+            "Versatile design suitable for multiple occasions"
+        ],
+        "type": [" new arrivals"]
+
+    },
+    {
+        "id": 18,
+        "name": "Light Brown linen Trouser",
+        "price": 1099,
+        "images": ["/gangsimages/s1.webp", "/gangsimages/s2.webp", "/gangsimages/s3.webp"],
+        "category": "Phants",
+        "sizes": ["28", "30", "32", "34", "36", "38"],
+        "original_price": 1499,
+        "description": "Product Description: Experience unmatched comfort and timeless style with this premium-quality apparel, crafted from the finest materials for a relaxed fit and all-day wear.",
+        "product_details": [
+            "High-quality fabric for durability and comfort",
+            "Tailored fit for a modern and stylish look",
+            "Breathable and lightweight material",
+            "Machine washable for easy maintenance",
+            "Versatile design suitable for multiple occasions"
+        ],
+        "type": ["Best of gangs,new arrivals"]
+
+    },
+    {
+        "id": 19,
+        "name": "Plain Black-Ribbed Polo T-Shirt",
+        "price": 799,
+        "images": ["/gangsimages/varun11.webp", "/gangsimages/varun10.webp"],
+        "category": "t-shirts",
+        "sizes": ["28", "30", "32", "34", "36", "38"],
+        "original_price": 1499,
+        "description": "Product Description: Experience unmatched comfort and timeless style with this premium-quality apparel, crafted from the finest materials for a relaxed fit and all-day wear.",
+        "product_details": [
+            "High-quality fabric for durability and comfort",
+            "Tailored fit for a modern and stylish look",
+            "Breathable and lightweight material",
+            "Machine washable for easy maintenance",
+            "Versatile design suitable for multiple occasions"
+        ],
+        "type": ["winter collection"]
+
+    },
+    {
+        "id": 20,
+        "name": "Relaxed White Striped Shirt",
+        "price": 899,
+        "images": ["/gangsimages/mukesh9.webp", "/gangsimages/mukesh7.webp", "/gangsimages/mukesh8.webp"],
+        "category": "shirts",
+        "sizes": ["28", "30", "32", "34", "36", "38"],
+        "original_price": 1499,
+        "description": "Product Description: Experience unmatched comfort and timeless style with this premium-quality apparel, crafted from the finest materials for a relaxed fit and all-day wear.",
+        "product_details": [
+            "High-quality fabric for durability and comfort",
+            "Tailored fit for a modern and stylish look",
+            "Breathable and lightweight material",
+            "Machine washable for easy maintenance",
+            "Versatile design suitable for multiple occasions"
+        ],
+        "type": ["Best of gangs,new arrivals"]
+
+    }
+         
+]

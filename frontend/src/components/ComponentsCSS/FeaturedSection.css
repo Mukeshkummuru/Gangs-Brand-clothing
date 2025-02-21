@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+.feature-wrapper {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.feature-wrapper.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.feature-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.feature-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 2rem;
+  border-radius: 5px;
+  background: linear-gradient(135deg, #1e1e1e, #2a2a2a);
+  color: white;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.feature-box:hover {
+  transform: scale(1.03);
+}
+
+.slide-in-left {
+  animation: slideLeft 1s ease-in-out;
+}
+
+.slide-in-right {
+  animation: slideRight 1s ease-in-out;
+}
+
+@keyframes slideLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.feature-text {
+  max-width: 500px;
+}
+
+.feature-heading {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.feature-description {
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.feature-list {
+  list-style: none;
+  padding: 0;
+}
+
+.feature-list li {
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  margin: 5px 0;
+}
+
+.feature-image-wrapper {
+  width: 600px;
+  height: 400px;
+  overflow: hidden;
+}
+
+.feature-image {
+    width: 600px;
+    height: 500px;
+    object-fit: cover;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+  }
+
+.feature-image2{
+    width: 600px;
+    height: 400px;
+    object-fit: cover;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.feature-image:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  }
+
+.feature-image2:hover {
+transform: translateY(-10px) scale(1.05);
+box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.feature-stats {
+  display: flex;
+  gap: 2rem;
+}
+
+.stat-box {
+  padding: 1rem;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  text-align: center;
+}
+
+.stat-box h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.stat-box p {
+  font-size: 0.9rem;
+}
+
+
+.feature-container:first-child::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 80px;
+    height: 80px;
+    border-top: 4px solid #ff8a42de;  /* Orangeish Color */
+    border-right: 4px solid #ff8a42de;
+    transition: transform 0.4s ease, 
+  }
+  
+  /* Box for the Second Section (Bottom-Left) */
+  .feature-container:nth-child(1)::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 80px;
+    height: 80px;
+    border-bottom: 4px solid #ff8a42de;
+    border-left: 4px solid #ff8a42de;
+  }
+
+ 
+  @media (max-width: 480px) {
+    .feature-container {
+      gap: 2rem;
+      padding: 1rem;
+    }
+  
+    .feature-box {
+      flex-direction: column;
+      text-align: center;
+      padding: 1.5rem;
+    }
+  
+    .feature-text {
+      max-width: 100%;
+    }
+  
+    .feature-heading {
+      font-size: 1.5rem;
+    }
+  
+    .feature-description {
+      font-size: 0.9rem;
+    }
+  
+    .feature-list li {
+      font-size: 0.9rem;
+    }
+  
+    .feature-image-wrapper {
+      width: 100%;
+      height: auto;
+    }
+  
+    .feature-image,
+    .feature-image2 {
+      width: 100%;
+      height: auto;
+    }
+  
+    .feature-stats {
+      flex-direction: column;
+      gap: 1rem;
+    }
+  
+    .stat-box h3 {
+      font-size: 1.2rem;
+    }
+  
+    .stat-box p {
+      font-size: 0.8rem;
+    }
+  
+    /* Adjust corner design */
+    .feature-container:first-child::before,
+    .feature-container:nth-child(1)::after {
+      width: 50px;
+      height: 50px;
+    }
+  }
+  

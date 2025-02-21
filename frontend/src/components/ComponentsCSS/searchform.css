@@ -1,0 +1,220 @@
+/* Centered Search Container with Glass Effect */
+.search-container-new {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 7% auto 0 auto;
+  padding: 15px;
+  width: 90%;
+}
+
+/* Floating Search Form */
+.search-form-new {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 20px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.15); /* Glass effect */
+  backdrop-filter: blur(10px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  border: 0.8px solid black;
+  flex-wrap: nowrap; /* Ensures no wrapping of items */
+}
+
+/* On Hover: Elevate Effect */
+.search-form-new:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Modern Input Field */
+.search-input-new {
+  flex: 1;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  outline: none;
+  background: transparent;
+  color: black;
+  transition: border-color 0.3s ease;
+}
+
+/* Input Focus Effect */
+.search-input-new:focus {
+  border-color: #333;
+}
+
+/* Input Placeholder Styling */
+.search-input-new::placeholder {
+  color: #666;
+  font-style: italic;
+}
+
+/* Category Dropdown - Modern Styling */
+.search-select-new {
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid black;
+  background: rgba(255, 255, 255, 0.2); /* Light Glass Effect */
+  color: black;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: all 0.3s ease-in-out;
+  appearance: none; /* Remove default dropdown styling */
+  outline: none;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-weight: 550;
+  letter-spacing: 1px;
+}
+
+/* Category Dropdown - Hover Effect */
+.search-select-new:hover {
+  background: linear-gradient(135deg, #000, #444); /* Smooth Gradient */
+  color: white;
+  transform: scale(1.05); /* Slight Scale on Hover */
+  border-color: white;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Dropdown Focus Effect */
+.search-select-new:focus {
+  outline: none; /* Removes the thick border */
+}
+
+/* Styling for Dropdown Options */
+.search-select-new option {
+  font-family: "Poppins", sans-serif; /* Custom Font */
+  font-size: 16px;
+  padding: 12px;
+  text-align: center; /* Centers text */
+  background: white;
+  color: black;
+  transition: background 0.3s ease-in-out, transform 0.2s ease;
+}
+
+/* Hover Effect for Options */
+.search-select-new option:hover {
+  background: #ff6a00a1;
+  color: white;
+  transform: scale(1.05);
+}
+
+/* Active (Selected) Option */
+.search-select-new option:checked {
+  background: #ff6a00a1;
+  color: white;
+}
+
+
+/* Modern Search Button */
+.search-submit-new {
+  padding: 10px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  background: linear-gradient(135deg, #000, #333);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+/* Button Hover Effect */
+.search-submit-new:hover {
+  background: linear-gradient(135deg, #333, #000);
+  transform: scale(1.08);
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .search-form-new {
+    max-width: 90%;
+    gap: 10px; /* Keep the horizontal gap between elements */
+    flex-wrap: nowrap; /* Prevent wrapping */
+  }
+}
+
+  
+
+@media (max-width: 480px) {
+  .search-form-new {
+    gap: 10px; /* Keep the gap for horizontal alignment */
+    flex-wrap: nowrap; /* Ensure no wrapping */
+  }
+
+  .search-input-new,
+  .search-select-new {
+    min-width: 120px;
+  }
+
+  .search-submit-new {
+    flex: 1;
+    width: 100px;
+  }
+}
+
+/* No Results Image */
+.no-results {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 65vh; /* Center vertically */
+  text-align: center;
+}
+
+.no-results img {
+  width: 450px; /* Medium Size */
+  height: auto;
+  margin-bottom: 50px; /* Space between image & text */
+}
+
+
+@media (max-width: 480px){
+  .search-container-new {
+    margin-top: 20%;
+  }
+  .search-input-new{
+    padding: 10px 0 10px 5px;
+  }
+  .search-select-new {
+    padding: 10px 2px;
+    font-size: 13px;
+  }
+  .search-select-new option{
+     text-overflow: ellipsis;
+  }
+  .search-submit-new{
+     font-size: 13px;
+     letter-spacing: 1px;
+  }
+  .search-form-new{
+    gap: 8px;
+  }
+  .no-results h4{
+    font-size: 11px;
+    width: 100%;
+    margin-bottom: 50%;
+  }
+  
+   .no-results .second-line{
+    font-size: 18px;
+     width: 100%;   
+     transform: translateY(-225px);  
+     margin-bottom: 0;
+     padding: 0;
+  }
+  .no-results .arrow{
+    font-size: 1rem;
+  }
+  .no-results{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+  }
+   
+}

@@ -1,0 +1,21 @@
+body {
+  margin: 0; /* Remove unwanted margin */
+  padding: 0;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Ensure the page takes full width and prevents shifting */
+body {
+  position: relative;
+  max-width: 100vw;
+}
+
+/* Prevent horizontal scrolling */
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* hello git */
