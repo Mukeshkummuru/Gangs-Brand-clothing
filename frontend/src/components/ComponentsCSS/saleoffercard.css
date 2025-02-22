@@ -192,6 +192,7 @@
 @media (max-width: 480px) {
   .sale-offer-card {
     height: 30vh;
+    margin-top: -1%;
      
   }
   .sale-offer-card img{
@@ -219,35 +220,3 @@
   }
 }
 
-
-@media (max-width: 360px) {
-  .sale-offer-card {
-    height: 30vh;  
-    margin-top: -6%;
-  }
-  .sale-offer-card img{
-    object-fit: cover; 
-  }
-  
-  .brand-story {
-    padding: 1rem 0.5rem;
-    margin-top: -1%;
-    padding-bottom: 0;
-    margin-bottom: -6%;
-  }
-  
-  .brand-story h2 {
-    font-size: 1rem;
-  }
-  
-  .brand-story p {
-    font-size: 0.80rem;
-    line-height: 1.4;
-  }
-  
-
-  .text h5 {
-    font-size: 0.75rem;
-    padding: 0 0.5rem;
-  }
-}

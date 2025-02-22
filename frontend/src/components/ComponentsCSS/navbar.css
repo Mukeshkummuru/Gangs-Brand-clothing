@@ -233,7 +233,7 @@
 }
 
 
-@media (max-width: 480px) {
+@media (max-width: 430px) {
   .sidebar {
     width: 80%;
   }
@@ -244,7 +244,6 @@
   }
   .navbar-logo-container {
     position: relative;
-     top: 5%; 
      right: 1%; 
   }
   .navbar-logo{
