@@ -12,7 +12,7 @@
     align-items: center;
     gap: 10px;
     background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); /* Dark Teal Gradient */
-    border: 2px solid #d32f2f; /* Dark Red */
+    border: 1px solid #d32f2f; /* Dark Red */
     color: #ffffff;
   }
   
@@ -98,12 +98,13 @@
 @media (max-width: 375px) {
   .cart-notification {
     top: 10px; /* Adjust position for smaller screens */
-    right: 0px; /* Adjust position for smaller screens */
+    right: 50px; /* Adjust position for smaller screens */
     padding: 10px 15px; /* Reduce padding for smaller screens */
-    font-size: 13px; /* Adjust font size for better readability */
-    gap: 8px; /* Reduce gap between icon and text */
-    border-radius: 6px; /* Slightly smaller border radius */
-    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1); /* Adjust shadow for smaller screens */
+    font-size: 13px;  
+    gap: 8px; 
+    border-radius: 6px;  
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1); 
+    border: 1px solid #d32f2f;
   }
 
   .order-success-overlay {

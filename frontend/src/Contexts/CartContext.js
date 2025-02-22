@@ -33,7 +33,7 @@ const cartReducer = (state, action) => {
       return {
         ...state,
         showNotification: true,
-        notificationMessage: '📦 Order confirmed! Track your order in the Orders section '
+        notificationMessage: '📦Order placed! Track it in Orders section '
       };
 
     case 'REMOVE_FROM_CART':
