@@ -20,13 +20,13 @@ const cartReducer = (state, action) => {
                 : item
             ),
             showNotification: true,
-            notificationMessage: '💖 Item added to cart!'
+            notificationMessage: '💖 Added to cart| GANGS style unlocked!'
           }
         : {
             ...state,
             items: [...state.items, action.payload],
             showNotification: true,
-            notificationMessage: '💖 Item added to cart!'
+            notificationMessage: '💖 Added to cart| GANGS style unlocked!'
           };
 
     case 'HURRY_NOTIFICATION':

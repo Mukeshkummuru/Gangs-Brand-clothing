@@ -79,20 +79,25 @@ const Navbar = () => {
             </button>
           </div>
 
-          <ul className="sidebar-menu">
-            {!user ? (
-              <li onClick={handleLoginClick}>Login</li>
-            ) : (
-              <>
-                <li onClick={handleOrderClick}>Orders ({orders.length})</li>
-                <li className="mobile-cart" onClick={() => navigate("/cart")}>
-                  Cart
-                </li>
-                <li onClick={() => setShowAddress(true)}>Address</li>
-                <li className="logout-button" onClick={handleLogout}>Logout</li>
-              </>
-            )}
-          </ul>
+            <ul className="sidebar-menu">
+              {!user ? (
+                <li onClick={() => { handleLoginClick(); setIsOpen(false); }}>Login</li>
+              ) : (
+                <>
+                  <li onClick={() => { handleOrderClick(); setIsOpen(false); }}>
+                    Orders ({orders.length})
+                  </li>
+                  <li className="mobile-cart" onClick={() => { navigate("/cart"); setIsOpen(false); }}>
+                    Cart
+                  </li>
+                  <li onClick={() => { setShowAddress(true); setIsOpen(false); }}>
+                    Address
+                  </li>
+                  <li className="logout-button" onClick={handleLogout}>Logout</li>
+                </>
+              )}
+            </ul>
+
         </div>
       </nav>
 

@@ -17,10 +17,10 @@ export const AuthProvider = ({ children }) => {
     if (!token) return;
 
     try {
-      const response = await axios.get('https://gangs-backend.onrender.com/api/auth/verify', {
+      const { data } = await axios.get('https://gangs-backend.onrender.com/api/auth/verify', {
         headers: { Authorization: `Bearer ${token}` }
       });
-      setUser(response.data.user);
+      setUser(data.user);
     } catch (err) {
       localStorage.removeItem('token');
       setUser(null);
@@ -36,11 +36,12 @@ export const AuthProvider = ({ children }) => {
   }, [location.pathname]);
 
   const toastMessage = (message, type = "info") => {
+    toast.dismiss(); // Clear previous toasts to prevent stacking
     toast(message, {
       type,
       position: "top-right",
       autoClose: 3000,
-      hideProgressBar: false,
+      hideProgressBar: true,
       closeOnClick: true,
       pauseOnHover: false,
       draggable: true,

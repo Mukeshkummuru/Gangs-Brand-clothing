@@ -203,11 +203,12 @@
   .brand-story {
     padding: 1rem 0.5rem;
     margin-top: 5%;
-    margin-bottom: 5%;
+    margin-bottom: 5%; 
   }
 
   .brand-story h2 {
-    font-size: 1.35rem;
+    font-size: 1.3rem;
+     
   }
 
    
@@ -221,7 +222,7 @@
 
   .text h5 {
     font-size: 0.75rem;
-    margin-top: 15%;
+    margin-top: 17%;
   }
 
   /* Improve scrolling text */
@@ -238,6 +239,10 @@
 
   .hover-underline {
     font-size: 1.5rem;  
+  }
+
+  .hover-underline::after{
+    max-width: 75%;
   }
 
 }

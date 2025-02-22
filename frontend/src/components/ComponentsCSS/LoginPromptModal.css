@@ -121,13 +121,13 @@
   
     .modal-content {
       width: 90%; /* Take up more screen width */
-      max-width: 300px; /* Slightly smaller max-width for mobile */
-      padding: 1.5rem; /* Reduce padding for compact layout */
+      max-width: 280px; /* Slightly smaller max-width for mobile */
+      padding: 12px 20px;/* Reduce padding for compact layout */
       border-radius: 10px; /* Slightly smaller border radius */
     }
   
     .modal-header {
-      margin-bottom: 1rem; /* Reduce margin for compact layout */
+      margin-bottom: -3%; /* Reduce margin for compact layout */
     }
   
     .modal-header h2 {
@@ -144,7 +144,7 @@
     }
   
     .modal-body p {
-      font-size: 14px; /* Smaller font size for mobile */
+      font-size: 11px; /* Smaller font size for mobile */
       margin-bottom: 0.8rem; /* Reduce margin for compact layout */
     }
   

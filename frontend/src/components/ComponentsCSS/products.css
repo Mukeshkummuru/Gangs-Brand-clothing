@@ -292,7 +292,7 @@
   }
 
   .image-container {
-    height: 35vh; /* Set image height to 40vh */
+    height: 30vh; /* Set image height to 40vh */
   }
 
   .image-container img {
@@ -325,7 +325,7 @@
   }
 
   .current-price_main {
-    font-size: 15px; /* Smaller font size for current price */
+    font-size: 14.5px; /* Smaller font size for current price */
   }
 
   .discount-tag_main {
