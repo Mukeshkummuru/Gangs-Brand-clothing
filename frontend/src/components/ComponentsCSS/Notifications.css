@@ -98,7 +98,7 @@
 @media (max-width: 375px) {
   .cart-notification {
     top: 10px; /* Adjust position for smaller screens */
-    right: 50px; /* Adjust position for smaller screens */
+    right: 20px; /* Adjust position for smaller screens */
     padding: 10px 15px; /* Reduce padding for smaller screens */
     font-size: 13px;  
     gap: 8px; 

@@ -62,7 +62,7 @@ const ProductPage = ({products}) => {
 
   const handleAddToCart = () => {
     if (!selectedSize) {
-      toast.error('Pick a size to flex GANGS style!');
+      toast.error('Choose your size to flex GANGS style!');
       return;
     }
     const cartItem = {
@@ -76,7 +76,7 @@ const ProductPage = ({products}) => {
 
   const handleBuyNow = () => {
     if (!selectedSize) {
-      toast.error('Pick a size to flex GANGS style!');
+      toast.error('Choose your size to flex GANGS style!');
       return;
     }
     handleAddToCart();
@@ -111,7 +111,7 @@ const ProductPage = ({products}) => {
     <div className="product-page">
       <ToastContainer   
         position="top-center"
-        autoClose={3000}
+        autoClose={2000}
         hideProgressBar={false}
         newestOnTop={false}
         closeOnClick
