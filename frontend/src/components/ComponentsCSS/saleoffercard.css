@@ -192,7 +192,7 @@
 @media (max-width: 480px) {
   .sale-offer-card {
     height: 30vh;
-    margin-top: -1%;
+    margin-top: -3%;
      
   }
   .sale-offer-card img{
@@ -201,16 +201,23 @@
   
   .brand-story {
     padding: 1rem 0.5rem;
-    margin-top: 0.25rem;
+    margin-top: 10%
   }
   
   .brand-story h2 {
-    font-size: 1.25rem;
+    font-size:20px;
+    overflow: hidden;  
+    max-width: 100%;   
+  }
+
+  .hover-underline::after {
+   max-width: 90%;
   }
   
   .brand-story p {
-    font-size: 0.85rem;
+    font-size: 0.80rem;
     line-height: 1.4;
+    max-width: 90%;
   }
   
 
