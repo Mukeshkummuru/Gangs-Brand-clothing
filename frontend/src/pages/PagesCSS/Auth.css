@@ -162,5 +162,17 @@
   transform: translate(-50%, -50%) scale(1);
 }
 
+
+@media (max-width: 430px) {
+  .auth-card{
+    margin-top: 0;
+    margin-bottom: 50%;
+  }
+  .auth-container {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    
+  }
+  }
  
  

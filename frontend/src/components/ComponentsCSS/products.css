@@ -280,11 +280,12 @@
   row-gap: 28px; 
 }
 
-@media (max-width: 480px){
+@media (max-width: 375px){
   .product-grid {
     display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 2fr));
+  grid-template-columns: repeat(auto-fit, minmax(100px, 2fr));
   margin-bottom: 2rem;
+  padding: 0;
   }
   .image-container{
     max-width: 100%;
@@ -299,17 +300,24 @@
     padding: 10px;
   }
   .product-title{
-    font-size: 15px;
+    font-size: 14px;
+    white-space: normal;
+  }
+  .current-price_main{
+    font-size: 13px;
   }
   .original-price_main{
-     font-size: 10px;
+     font-size: 9px;
   }
   .discount-tag_main{
-    font-size: 12px;
+    font-size: 11px;
   }
   .product-section{
     margin-bottom: 0;
     margin-top: -4%;
   }
+   .price-container{
+    gap: 5px;
+   }
   }
  

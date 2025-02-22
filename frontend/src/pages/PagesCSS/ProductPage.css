@@ -608,7 +608,7 @@
 }
 
 /* Mobile Screens (Max Width: 480px) */
-@media (max-width: 480px) {
+@media (max-width: 430px) {
   .product-page {
     padding: 15px; /* Add padding to all sides */
   }
@@ -681,13 +681,14 @@
 
   .size-options {
     flex-wrap: wrap;
-    gap: 10px; /* Reduce gap between size buttons */
+    gap: 8px; 
   }
 
   .size-btn {
-    width: 40px;
-    height: 40px;
-    font-size: 14px; /* Adjust font size for better fit */
+    width: 50px;
+    height: 50px;
+    font-size: 14px; 
+    border-radius: 10px; 
   }
 
   .quantity-picker {
@@ -737,10 +738,11 @@
     font-size: 15px;
     margin-bottom: 10px; /* Reduce gap below heading */
     padding: 10px 0;
+    left: 0;
   }
 
   .related-list {
-    grid-template-columns: repeat(5, minmax(200px, 1fr)); 
+    grid-template-columns: repeat(2, minmax(150px, 1fr)); 
     gap: 10px; /* Reduce gap between products */
    padding: 0;
     
@@ -748,6 +750,6 @@
 
   .related-list img {
     width: 100%; /* Ensure images fit within their containers */
-    height: 30vh; /* Maintain aspect ratio */
+    height: 35vh; /* Maintain aspect ratio */
   }
 }

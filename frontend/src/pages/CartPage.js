@@ -76,8 +76,10 @@ const CartPage = () => {
               <p>Shipping: Free</p>
               <p className="total">Total: ₹{totalAmount.toFixed(2)}</p>
             </div>
+            <div className='cart-button-new'>
             <Link to="/buy-now" className="checkout-button">Proceed to Checkout</Link>
             <Link to="/" className="continue-shopping">Continue Shopping</Link>
+            </div>
           </div>
         </div>
       )}

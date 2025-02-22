@@ -113,3 +113,59 @@
     from { transform: translateY(20px); }
     to { transform: translateY(0); }
   }
+
+  @media (max-width: 430px) {
+    .modal-overlay {
+      background: rgba(0, 0, 0, 0.7); /* Darker overlay for better focus */
+    }
+  
+    .modal-content {
+      width: 95%; /* Take up more screen width */
+      max-width: 350px; /* Slightly smaller max-width for mobile */
+      padding: 1.5rem; /* Reduce padding for compact layout */
+      border-radius: 10px; /* Slightly smaller border radius */
+    }
+  
+    .modal-header {
+      margin-bottom: 1rem; /* Reduce margin for compact layout */
+    }
+  
+    .modal-header h2 {
+      font-size: 1.3rem; /* Smaller font size for mobile */
+    }
+  
+    .close-btn {
+      font-size: 1.3rem; /* Smaller close button */
+    }
+  
+    .modal-body h5 {
+      font-size: 18px; /* Smaller font size for mobile */
+      margin-bottom: 5%; /* Reduce margin for compact layout */
+    }
+  
+    .modal-body p {
+      font-size: 14px; /* Smaller font size for mobile */
+      margin-bottom: 0.8rem; /* Reduce margin for compact layout */
+    }
+  
+    .modal-actions {
+      flex-direction: column; /* Stack buttons vertically */
+      gap: 0.8rem; /* Reduce gap between buttons */
+      margin-bottom: 1.5rem; /* Reduce margin for compact layout */
+    }
+  
+    .login-btn,
+    .signup-btn {
+      width: 100%; /* Full width for stacked buttons */
+      padding: 0.8rem; /* Slightly smaller padding */
+      font-size: 14px; /* Smaller font size for mobile */
+    }
+  
+    .continue-text {
+      font-size: 14px; /* Smaller font size for mobile */
+    }
+  
+    .continue-text span {
+      font-size: 14px; /* Smaller font size for mobile */
+    }
+  }
