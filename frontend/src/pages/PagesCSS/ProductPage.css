@@ -73,6 +73,8 @@
   flex-grow: 1;
 }
 
+
+/* Fullscreen Toggle */
 .nav-btn {
   position: absolute;
   top: 50%;
@@ -107,7 +109,7 @@
   object-fit: cover;
 }
 
-/* Fullscreen Toggle */
+ 
 .fullscreen-toggle {
   position: absolute;
   top: 1rem;
@@ -132,6 +134,32 @@
 
 .main-image-container:hover .fullscreen-toggle {
   opacity: 1;
+}
+
+.fullscreen-nav-btn.prev-btn{
+  left: 10%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.644);
+  border: none;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.fullscreen-nav-btn.next-btn{
+  right: 10%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.644);
+  border: none;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  z-index: 2;
 }
 
 /* Product Details Styles */
@@ -210,6 +238,7 @@
   background: none;
   cursor: pointer;
   transition: all 0.3s ease;
+  border-radius: 8px;
 }
 
 .size-btn:hover {
@@ -373,6 +402,12 @@
   color: white;
   font-size: 32px;
   cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.close-fullscreen:hover{
+  color: #ff6f61;
+  transform: rotate(90deg);
 }
 
 /* Loading and Error States */
@@ -480,37 +515,14 @@
   padding: 20px 10px;
 }
  
-
-
-/* Tablets and Small Screens (Max Width: 1024px) */
-@media (max-width: 1024px) {
-  .product-page-container {
-    grid-template-columns: 1fr; /* Make product details and image gallery stack */
-  }
-
-  .image-gallery {
-    flex-direction: column; /* Stack thumbnails vertically */
-    align-items: center;
-  }
-
-  .thumbnail-strip {
-    flex-direction: row;
-    justify-content: center;
-  }
-
-  .thumbnail {
-    width: 50px;
-    height: 50px;
-  }
-
-  .service-features {
-    grid-template-columns: repeat(3, 1fr); /* Adjust service features */
-  }
-
-  .related-list {
-    grid-template-columns: repeat(3, 1fr); /* Show 3 related products per row */
-  }
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
 }
+
+ 
 
 /* Mobile Screens (Max Width: 768px) */
 @media (max-width: 768px) {
@@ -607,8 +619,8 @@
   }
 }
 
-/* Mobile Screens (Max Width: 480px) */
-@media (max-width: 430px) {
+ 
+@media (max-width: 375px) {
   .product-page {
     padding: 15px; /* Add padding to all sides */
   }
@@ -709,7 +721,7 @@
 
   .action-buttons {
     flex-direction: column;
-    gap: 10px; /* Reduce gap between buttons */
+    gap: 15px; /* Reduce gap between buttons */
     margin: 1rem 0; /* Adjust margin */
   }
 

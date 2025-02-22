@@ -32,7 +32,7 @@ const SaleOfferCard = () => {
      <div className="text"> <h5>Scroll up | Page is yours</h5> </div>
       {/* New Brand Story Section */}
       <div className="brand-story">
-        <h2><span className="hover-underline">Want To Know About GANGS</span></h2>
+        <h2 className="hover-underline"> Want To Know About GANGS - </h2>
         <p>
           GANGS is more than just a brand—it's a movement. Born from the dream of three
           friends passionate about fashion, GANGS represents individuality, boldness, and 

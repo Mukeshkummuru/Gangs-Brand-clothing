@@ -280,44 +280,90 @@
   row-gap: 28px; 
 }
 
-@media (max-width: 375px){
+@media (max-width: 375px) {
+  .product-wrapper {
+    padding: 1rem; /* Reduced padding on all sides */
+  }
+
   .product-grid {
-    display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 2fr));
-  margin-bottom: 2rem;
-  padding: 0;
+    grid-template-columns: repeat(2, minmax(150px, 1fr)); /* Two columns per row */
+    gap: 15px; /* Reduced gap between cards */
+    padding: 15px 5px; /* Add padding to the grid container */
   }
-  .image-container{
-    max-width: 100%;
-    height: auto;
+
+  .image-container {
+    height: 35vh; /* Set image height to 40vh */
   }
+
   .image-container img {
     width: 100%;
-    height: 30vh;
-    object-fit: cover;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the container */
   }
+
   .product-info {
-    padding: 10px;
+    padding: 10px; /* Reduced padding inside the product card */
   }
-  .product-title{
+
+  .product-title {
     font-size: 14px;
     white-space: normal;
+    overflow: hidden; /* Hide overflowing text */
+    display: -webkit-box; /* Enable flexible box layout */
+    -webkit-line-clamp: 2; /* Limit text to 2 lines */
+    -webkit-box-orient: vertical; /* Set the direction of the flexible box */
+    text-overflow: ellipsis; /* Add ellipsis when text overflows */
+    max-width: 100%; /* Ensure it doesn't expand beyond the container */ 
   }
-  .current-price_main{
-    font-size: 13px;
+
+  .price-container{
+    gap: 7px;
   }
-  .original-price_main{
-     font-size: 9px;
+
+  .original-price_main {
+    font-size: 10px; /* Smaller font size for original price */
   }
-  .discount-tag_main{
-    font-size: 11px;
+
+  .current-price_main {
+    font-size: 15px; /* Smaller font size for current price */
   }
-  .product-section{
-    margin-bottom: 0;
-    margin-top: -4%;
+
+  .discount-tag_main {
+    font-size: 10px; /* Smaller font size for discount tag */
   }
-   .price-container{
-    gap: 5px;
-   }
+
+  .product-section {
+    margin-top: -6%; /* Adjust margin for better spacing */
+    padding-bottom: 1rem; /* Reduced padding at the bottom */
   }
+
+  .product-category-title {
+    font-size: 1.5rem; /* Smaller font size for category title */
+    margin-bottom: 1rem; /* Reduced margin below category title */
+  }
+
+  .view-all-btn {
+    padding: 0.6rem 1.5rem; /* Smaller padding for the button */
+    font-size: 0.9rem; /* Smaller font size for the button */
+  }
+
+  .no-results {
+    font-size: 1.5rem; /* Smaller font size for no-results message */
+  }
+
+  .no-results .second-line {
+    font-size: 1.3rem; /* Smaller font size for the second line */
+    transform: translateY(-50px); /* Adjust positioning */
+  }
+
+  .no-results .arrow {
+    font-size: 1.2rem; /* Smaller arrow size */
+  }
+
+  .product-card:hover {
+    box-shadow: none;
+    transform: none;
+  }
+}
+
  

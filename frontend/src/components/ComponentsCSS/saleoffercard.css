@@ -194,34 +194,50 @@
     height: 30vh;
     margin-top: -3%;
   }
-  .sale-offer-card img{
+
+  .sale-offer-card img {
     object-fit: cover;
   }
-  
+
+ 
   .brand-story {
     padding: 1rem 0.5rem;
-    margin-top: 10%
-  }
-  
-  .brand-story h2 {
-    font-size:1.3rem;
-    overflow: hidden;  
-    max-width: 100%;   
+    margin-top: 5%;
+    margin-bottom: 5%;
   }
 
-  .hover-underline::after {
-   max-width: 90%;
+  .brand-story h2 {
+    font-size: 1.35rem;
   }
-  
+
+   
   .brand-story p {
-    font-size: 0.80rem;
-    line-height: 1.4;
-    max-width: 90%;
+    font-size: 0.75rem; /* Medium size */
+    line-height: 1.7; /* Improve readability */
+    text-align: left; /* Align text to the left */
+    margin-top: -10px;
+    width: 90%; /* Full width */
   }
-  
+
   .text h5 {
     font-size: 0.75rem;
-    padding: 0 0.5rem;
+    margin-top: 15%;
   }
-}
 
+  /* Improve scrolling text */
+  .scrolling-text-container {
+    padding: 20px 0;
+    margin: 15px 0;
+  }
+
+  .scrolling-text {
+    font-size: 15px;
+    animation: scrollText 200s linear infinite;
+    letter-spacing: 2px;
+  }
+
+  .hover-underline {
+    font-size: 1.5rem;  
+  }
+
+}
