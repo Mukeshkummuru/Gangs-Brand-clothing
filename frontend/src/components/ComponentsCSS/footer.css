@@ -136,18 +136,66 @@
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
-  .footer-container {
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+@media (max-width: 1024px) {
+  .footer {
+    display: block;
   }
 
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Ensures proper alignment */
+  }
+
+  /* Hide all footer sections except Social Media & Action */
   .footer-section {
+    display: none;
+  }
+
+  .footer-section:nth-child(5) { 
+    display: block;
     text-align: center;
   }
 
   .social-media {
+    display: flex;
+    gap: 15px;
     justify-content: center;
+    margin-bottom: 1rem;
   }
+
+
+  /* Ensure Footer Divider is visible */
+  .footer-divider {
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #000;
+    margin: 1rem 0;
+  }
+
+  /* Ensure Footer Bottom is visible */
+  .footer-bottom {
+    text-align: center;
+    padding-top: 0.8rem;
+    font-size: 0.85rem;
+    display: block;
+  }
+
+  .footer-section h4:hover {
+    color: inherit;
+  }
+  
+  .footer-section h4::after {
+    background: none;
+    transition: none;
+  }
+  
+  .footer-section h4:hover::after {
+    width: none;
+  }
+  
 }
 
 @media (max-width: 480px) {
@@ -196,11 +244,21 @@
     font-size: 0.85rem;
     display: block;
   }
+
+  .footer-section h4:hover {
+    color: inherit;
+  }
+  
+  .footer-section h4::after {
+    background: none;
+    transition: none;
+  }
+  
+  .footer-section h4:hover::after {
+    width: none;
+  }
+
 }
-
-
-
-   
 
 /* Smooth Fade-in Animation */
 @keyframes fadeIn {

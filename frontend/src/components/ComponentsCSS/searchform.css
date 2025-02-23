@@ -235,7 +235,280 @@
   .no-results .second-line{
     font-size: 13px;
      width: 100%;   
-     transform: translateY(-197px); 
+     transform: translateY(-200px); 
+     margin-bottom: 0;
+     padding: 0;
+  }
+
+  .no-results .arrow{
+    font-size: 13px;
+  }
+
+  .no-results{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+  }
+}
+
+@media (min-width: 414px) {
+  .search-container-new {
+    margin: 25% auto 0 auto; /* Adjust margin for better spacing */
+    padding: 10px; /* Reduce padding */
+  }
+
+  .search-form-new {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    gap: 10px; /* Add gap between elements */
+    padding: 10px; /* Reduce padding */
+    width: 100%; /* Full width */
+  }
+
+  .search-input-button-container {
+    display: flex;
+    gap: 10px; /* Add gap between input and button */
+    width: 100%; /* Full width */
+  }
+
+  .search-input-new {
+    flex: 1; /* Take up remaining space */
+    font-size: 14px; /* Smaller font size */
+    padding: 10px; /* Adjust padding */
+    border: 1px solid #ccc; /* Add border */
+    border-radius: 6px; /* Rounded corners */
+  }
+
+  .search-submit-new {
+    padding: 10px 20px; /* Adjust padding */
+    font-size: 14px; /* Smaller font size */
+    background: linear-gradient(135deg, #000, #333); /* Gradient background */
+    color: white; /* White text */
+    border: none; /* Remove border */
+    border-radius: 6px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+    transition: transform 0.3s ease, background 0.3s ease; /* Smooth transitions */
+  }
+
+  .search-submit-new:hover {
+    background: linear-gradient(135deg, #333, #000); /* Darker gradient on hover */
+    transform: scale(1.05); /* Slight scale on hover */
+  }
+
+  .search-select-new {
+    width: 100%; /* Full width */
+    font-size: 14px; /* Smaller font size */
+    padding: 10px; /* Adjust padding */
+    border: 1px solid #ccc; /* Add border */
+    border-radius: 6px; /* Rounded corners */
+    background: linear-gradient(135deg, #000, #333); /* Gradient background */
+    color: white; /* White text */
+    cursor: pointer; /* Pointer cursor */
+    transition: all 0.3s ease-in-out; /* Smooth transitions */
+  }
+
+
+  .product-grid-search{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(150px, 1fr)); /* Minimum card width of 200px */
+    padding: 20px;
+    column-gap: 12px; 
+    row-gap: 20px; 
+  }
+
+  .no-results h4{
+    font-size: 10px;
+     width: 100%;
+    margin-bottom: 50%;
+    padding: 10px;
+  }
+  
+  .no-results .second-line{
+    font-size: 13px;
+     width: 100%;   
+     transform: translateY(-230px); 
+     margin-bottom: 0;
+     padding: 0;
+  }
+
+  .no-results .arrow{
+    font-size: 13px;
+  }
+
+  .no-results{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+  }
+}
+
+@media (min-width: 390px) {
+  .search-container-new {
+    margin: 25% auto 0 auto; /* Adjust margin for better spacing */
+    padding: 10px; /* Reduce padding */
+  }
+
+  .search-form-new {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    gap: 10px; /* Add gap between elements */
+    padding: 10px; /* Reduce padding */
+    width: 100%; /* Full width */
+  }
+
+  .search-input-button-container {
+    display: flex;
+    gap: 10px; /* Add gap between input and button */
+    width: 100%; /* Full width */
+  }
+
+  .search-input-new {
+    flex: 1; /* Take up remaining space */
+    font-size: 14px; /* Smaller font size */
+    padding: 10px; /* Adjust padding */
+    border: 1px solid #ccc; /* Add border */
+    border-radius: 6px; /* Rounded corners */
+  }
+
+  .search-submit-new {
+    padding: 10px 20px; /* Adjust padding */
+    font-size: 14px; /* Smaller font size */
+    background: linear-gradient(135deg, #000, #333); /* Gradient background */
+    color: white; /* White text */
+    border: none; /* Remove border */
+    border-radius: 6px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+    transition: transform 0.3s ease, background 0.3s ease; /* Smooth transitions */
+  }
+
+  .search-submit-new:hover {
+    background: linear-gradient(135deg, #333, #000); /* Darker gradient on hover */
+    transform: scale(1.05); /* Slight scale on hover */
+  }
+
+  .search-select-new {
+    width: 100%; /* Full width */
+    font-size: 14px; /* Smaller font size */
+    padding: 10px; /* Adjust padding */
+    border: 1px solid #ccc; /* Add border */
+    border-radius: 6px; /* Rounded corners */
+    background: linear-gradient(135deg, #000, #333); /* Gradient background */
+    color: white; /* White text */
+    cursor: pointer; /* Pointer cursor */
+    transition: all 0.3s ease-in-out; /* Smooth transitions */
+  }
+
+
+  .product-grid-search{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(150px, 1fr)); /* Minimum card width of 200px */
+    padding: 20px;
+    column-gap: 12px; 
+    row-gap: 20px; 
+  }
+
+  .no-results h4{
+    font-size: 8px;
+     width: 100%;
+    margin-bottom: 50%;
+    padding: 10px;
+  }
+  
+  .no-results .second-line{
+    font-size: 13px;
+     width: 100%;   
+     transform: translateY(-210px); 
+     margin-bottom: 0;
+     padding: 0;
+  }
+
+  .no-results .arrow{
+    font-size: 13px;
+  }
+
+  .no-results{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+  }
+}
+
+@media (min-width: 430px) {
+  .search-container-new {
+    margin: 25% auto 0 auto; /* Adjust margin for better spacing */
+    padding: 10px; /* Reduce padding */
+  }
+
+  .search-form-new {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    gap: 10px; /* Add gap between elements */
+    padding: 10px; /* Reduce padding */
+    width: 100%; /* Full width */
+  }
+
+  .search-input-button-container {
+    display: flex;
+    gap: 10px; /* Add gap between input and button */
+    width: 100%; /* Full width */
+  }
+
+  .search-input-new {
+    flex: 1; /* Take up remaining space */
+    font-size: 14px; /* Smaller font size */
+    padding: 10px; /* Adjust padding */
+    border: 1px solid #ccc; /* Add border */
+    border-radius: 6px; /* Rounded corners */
+  }
+
+  .search-submit-new {
+    padding: 10px 20px; /* Adjust padding */
+    font-size: 14px; /* Smaller font size */
+    background: linear-gradient(135deg, #000, #333); /* Gradient background */
+    color: white; /* White text */
+    border: none; /* Remove border */
+    border-radius: 6px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+    transition: transform 0.3s ease, background 0.3s ease; /* Smooth transitions */
+  }
+
+  .search-submit-new:hover {
+    background: linear-gradient(135deg, #333, #000); /* Darker gradient on hover */
+    transform: scale(1.05); /* Slight scale on hover */
+  }
+
+  .search-select-new {
+    width: 100%; /* Full width */
+    font-size: 14px; /* Smaller font size */
+    padding: 10px; /* Adjust padding */
+    border: 1px solid #ccc; /* Add border */
+    border-radius: 6px; /* Rounded corners */
+    background: linear-gradient(135deg, #000, #333); /* Gradient background */
+    color: white; /* White text */
+    cursor: pointer; /* Pointer cursor */
+    transition: all 0.3s ease-in-out; /* Smooth transitions */
+  }
+
+
+  .product-grid-search{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(150px, 1fr)); /* Minimum card width of 200px */
+    padding: 20px;
+    column-gap: 12px; 
+    row-gap: 20px; 
+  }
+
+  .no-results h4{
+    font-size: 10px;
+     width: 100%;
+    margin-bottom: 50%;
+    padding: 10px;
+  }
+  
+  .no-results .second-line{
+    font-size: 13px;
+     width: 100%;   
+     transform: translateY(-230px); 
      margin-bottom: 0;
      padding: 0;
   }

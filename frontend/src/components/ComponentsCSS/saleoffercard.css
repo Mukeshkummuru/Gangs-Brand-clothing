@@ -246,3 +246,59 @@
   }
 
 }
+
+@media (max-width: 430px) {
+  .sale-offer-card {
+    height: 30vh;
+    margin-top: -3%;
+  }
+
+  .sale-offer-card img {
+    object-fit: cover;
+  }
+
+  .brand-story {
+    padding: 1rem 0.5rem;
+    margin-top: 5%;
+    margin-bottom: 5%; 
+  }
+
+  .brand-story h2 {
+    font-size: 1.6rem;
+     
+  }
+
+  .brand-story p {
+    font-size: 0.80rem; /* Medium size */
+    line-height: 1.7; /* Improve readability */
+    text-align: left; /* Align text to the left */
+    margin-top: -10px;
+    width: 90%; /* Full width */
+  }
+
+  .text h5 {
+    font-size: 0.75rem;
+    margin-top: 17%;
+  }
+
+  /* Improve scrolling text */
+  .scrolling-text-container {
+    padding: 20px 0;
+    margin: 15px 0;
+  }
+
+  .scrolling-text {
+    font-size: 15px;
+    animation: scrollText 200s linear infinite;
+    letter-spacing: 2px;
+  }
+
+  .hover-underline {
+    font-size: 1.5rem;  
+  }
+
+  .hover-underline::after{
+    max-width: 75%;
+  }
+
+}

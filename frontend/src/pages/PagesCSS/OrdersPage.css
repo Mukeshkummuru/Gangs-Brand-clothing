@@ -151,80 +151,107 @@
   color: #444;
 }
 
-@media (max-width: 480px) {
-  .orders-page {
-    padding: 10px;
+@media (min-width: 375px) {
+  .order-summary h3{
+     font-size: 1.2rem;
   }
-
-  .orders-page h1 {
-    font-size: 1.8rem;
-    margin-bottom: 15px;
-  }
-
-  /* No Orders Message */
-  .orders-page p {
-    font-size: 0.95rem;
-    margin: 5px 0;
-  }
-
-  /* Orders List */
   .orders-list {
-     display: flex;
-     justify-content: center;
-     align-items: center;
-    gap: 10px;
-    padding: 0 0px;
-    border-radius: 5px;
-    margin-top: 3%;
+    grid-template-columns: 1fr; /* Single column */
+    justify-content: center; /* Centering */
+    padding: 0; /* Reduce side padding for smaller screens */
   }
 
-  /* Order Card */
   .order-card {
-    padding: 10px;
-    border-radius: 8px;
+    width: 100%; /* Make order cards take full width */
+    max-width: 300px; /* Keep a reasonable max width */
+    margin: 0 auto; /* Center align each order */
+    padding: 0 15px; /* Reduce padding */
   }
 
-  .order-summary h3 {
-    font-size: 1.1rem;
-    margin-bottom: 8px;
-  }
-
-  /* Order Item */
   .order-item {
-    gap: 10px;
-    flex-direction: row; /* Stack image and details */
-    align-items: flex-start;
+    flex-direction: column; /* Stack image & details vertically */
+    text-align: center; /* Center align text */
   }
 
   .order-item img {
     width: 100px;
     height: 100px;
-    border-radius: 6px;
   }
 
   .item-info {
     width: 100%;
+    align-items: center;
   }
 
-  .item-info p {
-    font-size: 0.9rem;
+}
+
+@media (min-width: 390px) {
+  .order-summary h3{
+     font-size: 1.2rem;
+  }
+  .orders-list {
+    grid-template-columns: 1fr; /* Single column */
+    justify-content: center; /* Centering */
+    padding: 0; /* Reduce side padding for smaller screens */
   }
 
-  /* Order Details */
-  .order-details {
-    padding: 0;
-    font-size: 0.85rem;
+  .order-card {
+    width: 100%; /* Make order cards take full width */
+    max-width: 300px; /* Keep a reasonable max width */
+    margin: 0 auto; /* Center align each order */
+    padding: 0 15px; /* Reduce padding */
   }
 
-  .order-details p {
-    margin: 5px 0;
+  .order-item {
+    flex-direction: column; /* Stack image & details vertically */
+    text-align: center; /* Center align text */
   }
 
-  .order-items {
-    margin-top: 8px;
+  .order-item img {
+    width: 100px;
+    height: 100px;
   }
 
-  .order-items h4 {
-    font-size: 0.95rem;
+  .item-info {
+    width: 100%;
+    align-items: center;
   }
+
+}
+
+
+@media (min-width: 430px) {
+  .order-summary h3{
+    font-size: 1.2rem;
+    text-align: center;
+ }
+ 
+  .orders-list {
+    grid-template-columns: 1fr; /* Single column */
+    justify-content: center; /* Centering */
+    padding: 0; /* Reduce side padding for smaller screens */
+  }
+
+  .order-card {
+    width: 100%; /* Make order cards take full width */
+    max-width: 340px; /* Keep a reasonable max width */
+    margin: 0 auto; /* Center align each order */
+    padding: 0 15px; /* Reduce padding */
+  }
+
+  .order-item {
+    flex-direction: column; /* Stack image & details vertically */
+    text-align: center; /* Center align text */
+  }
+
+  .order-item img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .item-info {
+    width: 100%;
+    align-items: center;
+  }
+
 }

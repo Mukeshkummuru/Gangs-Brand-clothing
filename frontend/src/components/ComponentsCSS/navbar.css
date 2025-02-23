@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Pacifico&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
+* {
+  -webkit-tap-highlight-color: transparent; /* Removes blue highlight */
+}
+
 .navbar {
   position: fixed;
   top: 0;
@@ -9,7 +13,6 @@
   z-index: 1000;
 }
 
- 
 .navbar-content {
   display: flex;
   align-items: center;
@@ -266,3 +269,35 @@
   }
 }
 
+@media (max-width: 480px) {
+  .sidebar {
+    width: 80%;
+  }
+  .navbar{
+    position: fixed;
+    width: 100%;
+    height: 70px;
+  }
+  .navbar-logo-container {
+    position: relative;
+     right: 1%; 
+     top: 2%;
+  }
+  .navbar-logo{
+    width: 150px;
+    top: 5%;
+  }
+  .navbar-center h1{
+    font-size: 20px;
+  }
+  .navbar-right{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    position: relative;
+    left:4%;
+  }
+  .cart-button{
+    display: none;
+  }
+}
