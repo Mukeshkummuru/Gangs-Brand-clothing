@@ -170,6 +170,72 @@ box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
     border-left: 4px solid #ff8a42de;
   }
 
+
+  @media (max-width: 430px) {
+    .feature-container {
+      gap: 2rem;
+      padding: 1rem;
+      margin-top: 10%;
+    }
+  
+    .feature-box {
+      flex-direction: column;
+      text-align: center;
+      padding: 1.5rem;
+    }
+  
+    .feature-text {
+      max-width: 100%;
+    }
+  
+    .feature-heading {
+      font-size: 1.5rem;
+    }
+  
+    .feature-description {
+      font-size: 0.9rem;
+    }
+  
+    .feature-list li {
+      font-size: 0.9rem;
+    }
+  
+    .feature-image-wrapper {
+      width: 100%;
+      height: auto;
+    }
+  
+    .feature-image,
+    .feature-image2 {
+      width: 100%;
+      height: auto;
+    }
+  
+    .feature-stats {
+      flex-direction: column;
+      gap: 1rem;
+    }
+  
+    .stat-box h3 {
+      font-size: 1.2rem;
+    }
+  
+    .stat-box p {
+      font-size: 0.8rem;
+    }
+  
+    /* Adjust corner design */
+    .feature-container:first-child::before,
+    .feature-container:nth-child(1)::after {
+      width: 50px;
+      height: 50px;
+    }
+
+    .feature-box:hover{
+      transform: none;
+    }
+  }
+  
  
   @media (max-width: 375px) {
     .feature-container {
@@ -236,68 +302,4 @@ box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
     }
   }
   
-  @media (max-width: 430px) {
-    .feature-container {
-      gap: 2rem;
-      padding: 1rem;
-      margin-top: 10%;
-    }
-  
-    .feature-box {
-      flex-direction: column;
-      text-align: center;
-      padding: 1.5rem;
-    }
-  
-    .feature-text {
-      max-width: 100%;
-    }
-  
-    .feature-heading {
-      font-size: 1.5rem;
-    }
-  
-    .feature-description {
-      font-size: 0.9rem;
-    }
-  
-    .feature-list li {
-      font-size: 0.9rem;
-    }
-  
-    .feature-image-wrapper {
-      width: 100%;
-      height: auto;
-    }
-  
-    .feature-image,
-    .feature-image2 {
-      width: 100%;
-      height: auto;
-    }
-  
-    .feature-stats {
-      flex-direction: column;
-      gap: 1rem;
-    }
-  
-    .stat-box h3 {
-      font-size: 1.2rem;
-    }
-  
-    .stat-box p {
-      font-size: 0.8rem;
-    }
-  
-    /* Adjust corner design */
-    .feature-container:first-child::before,
-    .feature-container:nth-child(1)::after {
-      width: 50px;
-      height: 50px;
-    }
-
-    .feature-box:hover{
-      transform: none;
-    }
-  }
-  
+ 

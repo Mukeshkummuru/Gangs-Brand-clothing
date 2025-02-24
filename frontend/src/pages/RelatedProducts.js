@@ -37,7 +37,7 @@ useEffect(() => {
 
   return (
     <div className="related-products">
-      <h2 className="hover-underline">Customer who brought this have on Look on this :</h2>
+      <h2 className="hover-underline">Customer who brought this have a Look on this :</h2>
 
       {loading && <p>Loading...</p>}
       {error && <p className="error">{error}</p>}

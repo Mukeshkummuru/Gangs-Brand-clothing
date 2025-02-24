@@ -48,8 +48,8 @@ const AddressPage = ({ onClose, isOpen }) => {
                 <div>
                   <input
                     type="text"
-                    value={formData.name}
-                    onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                    value={formData.fullname}
+                    onChange={(e) => setFormData({ ...formData, fullname: e.target.value })}
                     placeholder="Name"
                   />
                   <input

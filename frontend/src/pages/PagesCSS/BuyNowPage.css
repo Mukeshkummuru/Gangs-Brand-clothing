@@ -229,21 +229,6 @@ input[type="radio"] {
   }
 }
 
-/* Responsive design */
-@media (max-width: 768px) {
-  .checkout-container {
-    grid-template-columns: 1fr;
-  }
-  
-  .order-summary {
-    position: static;
-    margin-top: 2rem;
-  }
-  
-  .buy-now-page {
-    padding: 1rem;
-  }
-}
 
 /* Loading state for button */
 .place-order-button:active {
@@ -319,4 +304,21 @@ input[type="radio"] {
   color: #666;
   font-style: italic;
   padding: 10px 0;
+}
+
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .checkout-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .order-summary {
+    position: static;
+    margin-top: 2rem;
+  }
+  
+  .buy-now-page {
+    padding: 1rem;
+  }
 }

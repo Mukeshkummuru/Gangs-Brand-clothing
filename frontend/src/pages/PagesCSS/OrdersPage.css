@@ -151,76 +151,7 @@
   color: #444;
 }
 
-@media (min-width: 375px) {
-  .order-summary h3{
-     font-size: 1.2rem;
-  }
-  .orders-list {
-    grid-template-columns: 1fr; /* Single column */
-    justify-content: center; /* Centering */
-    padding: 0; /* Reduce side padding for smaller screens */
-  }
-
-  .order-card {
-    width: 100%; /* Make order cards take full width */
-    max-width: 300px; /* Keep a reasonable max width */
-    margin: 0 auto; /* Center align each order */
-    padding: 0 15px; /* Reduce padding */
-  }
-
-  .order-item {
-    flex-direction: column; /* Stack image & details vertically */
-    text-align: center; /* Center align text */
-  }
-
-  .order-item img {
-    width: 100px;
-    height: 100px;
-  }
-
-  .item-info {
-    width: 100%;
-    align-items: center;
-  }
-
-}
-
-@media (min-width: 390px) {
-  .order-summary h3{
-     font-size: 1.2rem;
-  }
-  .orders-list {
-    grid-template-columns: 1fr; /* Single column */
-    justify-content: center; /* Centering */
-    padding: 0; /* Reduce side padding for smaller screens */
-  }
-
-  .order-card {
-    width: 100%; /* Make order cards take full width */
-    max-width: 300px; /* Keep a reasonable max width */
-    margin: 0 auto; /* Center align each order */
-    padding: 0 15px; /* Reduce padding */
-  }
-
-  .order-item {
-    flex-direction: column; /* Stack image & details vertically */
-    text-align: center; /* Center align text */
-  }
-
-  .order-item img {
-    width: 100px;
-    height: 100px;
-  }
-
-  .item-info {
-    width: 100%;
-    align-items: center;
-  }
-
-}
-
-
-@media (min-width: 430px) {
+@media (max-width: 430px) {
   .order-summary h3{
     font-size: 1.2rem;
     text-align: center;
@@ -255,3 +186,74 @@
   }
 
 }
+
+@media (max-width: 390px) {
+  .order-summary h3{
+     font-size: 1.2rem;
+  }
+  .orders-list {
+    grid-template-columns: 1fr; /* Single column */
+    justify-content: center; /* Centering */
+    padding: 0; /* Reduce side padding for smaller screens */
+  }
+
+  .order-card {
+    width: 100%; /* Make order cards take full width */
+    max-width: 300px; /* Keep a reasonable max width */
+    margin: 0 auto; /* Center align each order */
+    padding: 0 15px; /* Reduce padding */
+  }
+
+  .order-item {
+    flex-direction: column; /* Stack image & details vertically */
+    text-align: center; /* Center align text */
+  }
+
+  .order-item img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .item-info {
+    width: 100%;
+    align-items: center;
+  }
+
+}
+
+
+@media (max-width: 375px) {
+  .order-summary h3{
+     font-size: 1.2rem;
+  }
+  .orders-list {
+    grid-template-columns: 1fr; /* Single column */
+    justify-content: center; /* Centering */
+    padding: 0; /* Reduce side padding for smaller screens */
+  }
+
+  .order-card {
+    width: 100%; /* Make order cards take full width */
+    max-width: 300px; /* Keep a reasonable max width */
+    margin: 0 auto; /* Center align each order */
+    padding: 0 15px; /* Reduce padding */
+  }
+
+  .order-item {
+    flex-direction: column; /* Stack image & details vertically */
+    text-align: center; /* Center align text */
+  }
+
+  .order-item img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .item-info {
+    width: 100%;
+    align-items: center;
+  }
+
+}
+
+ 

@@ -208,7 +208,7 @@
   background: #a8a8a8;
 }
 
- @media (max-width: 375px) {
+@media (max-width: 430px) {
   .address-slider{
     width: 80%;
     height: 100%;
@@ -233,3 +233,17 @@
     font-size: 10;
   }
 } 
+
+ @media (max-width: 375px) {
+  .address-slider{
+    width: 80%;
+    height: 100%;
+  }
+  .address-item input {
+    padding: 10px 10px;
+  }
+  .address-header{
+    font-size: 10;
+  }
+} 
+ 
