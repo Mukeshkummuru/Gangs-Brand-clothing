@@ -374,6 +374,7 @@
   }
   .navbar-center h1{
     font-size: 17px;
+    margin-right: -10%;
   }
   .navbar-right{
     display: flex;
@@ -387,9 +388,8 @@
   }
   /* Wishlist Button - Move to Top Left */
   .wishlist-button {
-    position: absolute;
-    right: 265px;  
-    z-index: 999;  
+    position: absolute !important;
+    right: 265px !important; 
   }
 
   .wishlist-button .wishlist-count {
