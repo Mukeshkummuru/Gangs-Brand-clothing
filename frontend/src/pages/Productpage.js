@@ -24,6 +24,9 @@ const ProductPage = ({products}) => {
   const navigate = useNavigate();
   const location = useLocation();
   const { dispatch } = useCart();
+  const [touchStart, setTouchStart] = useState(null);
+  const [touchEnd, setTouchEnd] = useState(null);
+
 
   // Scroll management
   useEffect(() => {
@@ -107,6 +110,34 @@ const ProductPage = ({products}) => {
     return null; // No product found, but no UI is shown as per your request
   }
 
+  const handleTouchStart = (e) => {
+    setTouchStart(e.touches[0].clientX);
+  };
+
+  const handleTouchMove = (e) => {
+    setTouchEnd(e.touches[0].clientX);
+  };
+
+  const handleTouchEnd = () => {
+    if (!touchStart || !touchEnd) return;
+    const swipeDistance = touchStart - touchEnd;
+
+    if (swipeDistance > 50) {
+      // Swipe left → Next image
+      setCurrentImageIndex((prevIndex) =>
+        prevIndex < product.images.length - 1 ? prevIndex + 1 : prevIndex
+      );
+    } else if (swipeDistance < -50) {
+      // Swipe right → Previous image
+      setCurrentImageIndex((prevIndex) =>
+        prevIndex > 0 ? prevIndex - 1 : prevIndex
+      );
+    }
+
+    setTouchStart(null);
+    setTouchEnd(null);
+  };
+
   return (
     <div className="product-page">
       <ToastContainer   
@@ -123,7 +154,10 @@ const ProductPage = ({products}) => {
       />
       
       <div className="product-page-container">
-        <div className="image-gallery">
+        <div className="image-gallery"
+         onTouchStart={handleTouchStart}
+         onTouchMove={handleTouchMove}
+         onTouchEnd={handleTouchEnd} >
           <div className="thumbnail-strip">
             {product.images.map((img, index) => (
               <div 
@@ -268,6 +302,9 @@ const ProductPage = ({products}) => {
             src={product.images[currentImageIndex]} 
             alt={product.name} 
             className="fullscreen-image"
+            onTouchStart={handleTouchStart}
+            onTouchMove={handleTouchMove}
+            onTouchEnd={handleTouchEnd}
           />
           <button className="close-fullscreen">×</button>
         </div>
