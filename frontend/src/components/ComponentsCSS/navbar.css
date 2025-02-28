@@ -429,7 +429,7 @@
      top: 2%;
   }
   .navbar-logo{
-    width: 140px;
+    width: 150px;
     top: 5%;
   }
   .navbar-center h1{
@@ -448,7 +448,7 @@
 
   .wishlist-button {
     position: absolute;
-    right: 270px;   
+    right: 266px;   
     z-index: 999;  
     color: black;
   }

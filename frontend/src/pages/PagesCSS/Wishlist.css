@@ -52,12 +52,12 @@
   .wishlist-grid{
    display: grid;
    grid-template-columns: repeat(2, minmax(150px, 1fr)); 
-   padding: 20px;
+   padding: 15px;
    column-gap: 10px; 
    row-gap: 15px; 
  }
  .wishlist-container {
-   margin: 25% auto 0 auto; /* Adjust margin for better spacing */
+   margin: 25% auto 0 auto;  
    padding: 10px; /* Reduce padding */
  }
  .wishlist-icon {
@@ -78,13 +78,14 @@
   .wishlist-grid{
    display: grid;
    grid-template-columns: repeat(2, minmax(150px, 1fr)); 
-   padding: 20px;
+   padding: 15px;
    column-gap: 10px; 
    row-gap: 15px; 
  }
  .wishlist-container {
-   margin: 25% auto 0 auto; /* Adjust margin for better spacing */
+   margin: 25% auto 0 auto;  
    padding: 10px; /* Reduce padding */
+ 
  }
  .wishlist-icon {
    position: absolute;
@@ -104,7 +105,7 @@
   .wishlist-grid{
    display: grid;
    grid-template-columns: repeat(2, minmax(150px, 1fr)); 
-   padding: 20px;
+   padding: 15px;
    column-gap: 10px; 
    row-gap: 15px; 
  }
@@ -130,13 +131,12 @@
    .wishlist-grid{
     display: grid;
     grid-template-columns: repeat(2, minmax(150px, 1fr)); 
-    padding: 20px;
+    padding: 15px;
     column-gap: 10px; 
     row-gap: 15px; 
   }
   .wishlist-container {
-    margin: 25% auto 0 auto; /* Adjust margin for better spacing */
-    padding: 10px; /* Reduce padding */
+    margin: 25% auto 0 auto; 
   }
   .wishlist-icon {
     position: absolute;
