@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
-import { Heart } from 'lucide-react';
+import { FaHeart } from "react-icons/fa"; 
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import RelatedProducts from './RelatedProducts';
@@ -12,6 +12,7 @@ import Lottie from "lottie-react";
 import { useNavigate, useLocation } from 'react-router-dom';
 import './PagesCSS/ProductPage.css';
 import { useCart } from '../Contexts/CartContext';
+import { useWishlist } from '../Contexts/WishlistContext';
 
 const ProductPage = ({products}) => {
   const { id } = useParams();
@@ -26,7 +27,7 @@ const ProductPage = ({products}) => {
   const { dispatch } = useCart();
   const [touchStart, setTouchStart] = useState(null);
   const [touchEnd, setTouchEnd] = useState(null);
-
+  const { wishlist, dispatch: wishlistDispatch } = useWishlist();
 
   // Scroll management
   useEffect(() => {
@@ -136,6 +137,22 @@ const ProductPage = ({products}) => {
 
     setTouchStart(null);
     setTouchEnd(null);
+  };
+
+  const handleAddToWishlist = () => {
+    const item = {
+      _id: product._id, // Use MongoDB ID
+      name: product.name,
+      price: product.price,
+      image: product.images[0], // Ensure this exists
+    };
+  
+    if (wishlist.some((w) => w._id === product._id)) {
+      toast.info("Already in Wishlist!");
+    } else {
+      wishlistDispatch({ type: "ADD_TO_WISHLIST", payload: item });
+      toast.success("Added to Wishlist!");
+    }
   };
 
   return (
@@ -256,10 +273,10 @@ const ProductPage = ({products}) => {
             </button>
           </div>
 
-          <button className="wishlist-btn">
-            <Heart size={20} />
-            Add to Wishlist
-          </button>
+            <button className="wishlist-btn" onClick={handleAddToWishlist}>
+              <FaHeart className={`heart-icon ${wishlist.some((w) => w._id === product._id) ? "filled" : ""}`} size={20} />
+              Add to Wishlist
+            </button>
 
           <div className="service-features">
             <div className="feature">

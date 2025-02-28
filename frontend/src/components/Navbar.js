@@ -1,15 +1,17 @@
 import React, { useState, useCallback, useEffect } from "react";
 import { FiX, FiMenu } from "react-icons/fi";
 import { BsPerson } from "react-icons/bs";
-import { FaShoppingCart, FaSearch } from "react-icons/fa";
+import { FaShoppingCart, FaSearch, FaHeart} from "react-icons/fa";
 import gangslogo from  "../Assests/images/gangs-remove-bg.png";
 import  "./ComponentsCSS/navbar.css";
 import { useNavigate } from "react-router-dom";
 import { useCart } from "../Contexts/CartContext";
 import { useAuth } from "../Contexts/AuthContext";
 import AddressPage from "../pages/Addresspage";
+import { useWishlist } from '../Contexts/WishlistContext';
 
 const Navbar = () => {
+  const { wishlist } = useWishlist();
   const [isOpen, setIsOpen] = useState(false);
   const [navBackground, setNavBackground] = useState(false);
   const [showAddress, setShowAddress] = useState(false);
@@ -50,6 +52,10 @@ const Navbar = () => {
           </div>
 
           <div className="navbar-right">
+          <button className="icon-button wishlist-button" onClick={() => navigate("/wishlist")}>
+              <FaHeart size={24} />
+              {wishlist.length > 0 && <span className="wishlist-count">{wishlist.length}</span>}
+            </button>
             <button className="icon-button search-button" onClick={handleSearchClick}>
               <FaSearch size={24} />
             </button>

@@ -18,6 +18,8 @@ import { AddressProvider } from "./Contexts/AddressContext";
 import { AuthProvider } from "./Contexts/AuthContext";
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { WishlistProvider } from "./Contexts/WishlistContext";
+import WishlistPage from './pages/WishlistPage';
  
 
 const App = () => {
@@ -25,6 +27,7 @@ const App = () => {
       <DataProvider>
         <CartProvider>
           <AddressProvider>
+            <WishlistProvider> 
             <Router>
             <AuthProvider> {/* Auth Provider should wrap everything */}
               <Navbar />
@@ -47,12 +50,14 @@ const App = () => {
                   <Route path="/buy-now" element={<BuyNowPage />} />
                   <Route path="/orders" element={<OrdersPage />} />
                   <Route path="/Address" element={<AddressPage />} />
+                  <Route path="/wishlist" element={<WishlistPage />} />
                 </Routes>
               </main>
               <Footer />
                 <ToastContainer />
               </AuthProvider>
             </Router>
+            </WishlistProvider>
           </AddressProvider>
         </CartProvider>
       </DataProvider>

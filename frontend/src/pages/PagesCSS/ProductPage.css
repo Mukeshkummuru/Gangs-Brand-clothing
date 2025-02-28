@@ -353,6 +353,15 @@
   color: #ddd;
 }
 
+.heart-icon {
+  color: gray;
+  transition: color 0.3s ease-in-out;
+}
+
+.heart-icon.filled {
+  color: red; /* Heart turns red if product is in wishlist */
+}
+
 /* Service Features Styles */
 .service-features {
   display: grid;

@@ -235,7 +235,7 @@
   
 }
 
-@media (max-width: 480px) {
+@media (max-width: 430px) {
   .sidebar {
     width: 80%;
   }
@@ -255,6 +255,9 @@
   }
   .navbar-center h1{
     font-size: 20px;
+    text-align: center;
+    padding: 0px;
+    margin-left: 6% ;
   }
   .navbar-right{
     display: flex;
@@ -265,6 +268,148 @@
   }
   .cart-button{
     display: none;
+  }
+  .wishlist-button {
+    position: absolute;
+    right: 312px;   
+    z-index: 999;  
+    color: black;
+  }
+  .icon-button svg {
+    color: black;
+  }
+  
+  .wishlist-button .wishlist-count {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    background-color: red;
+    color: white;
+    font-size: 12px;
+    width: 15px;
+    height: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+  }
+}
+
+@media (max-width: 414px) {
+  .sidebar {
+    width: 80%;
+  }
+  .navbar{
+    position: fixed;
+    width: 100%;
+    height: 70px;
+  }
+  .navbar-logo-container {
+    position: relative;
+     right: 1%; 
+     top: 2%;
+  }
+  .navbar-logo{
+    width: 140px;
+    top: 5%;
+  }
+  .navbar-center h1{
+    font-size: 19px;
+    text-align: center;
+  }
+  .navbar-right{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    position: relative;
+    left: 5%;
+  }
+  .cart-button{
+    display: none;
+  }
+  .wishlist-button {
+    position: absolute;
+    right: 310px;   
+    z-index: 999;  
+    color: black;
+  }
+  .icon-button svg {
+    width: 22px; /* Reduce icon size */
+    height: 22px;
+    color: black;
+  }
+  .wishlist-button .wishlist-count {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    background-color: red;
+    color: white;
+    font-size: 12px;
+    width: 15px;
+    height: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+  }
+}
+
+@media (max-width: 390px) {
+  .sidebar {
+    width: 80%;
+  }
+  .navbar{
+    position: fixed;
+    width: 100%;
+    height: 70px;
+  }
+  .navbar-logo-container {
+    position: relative;
+     right: 1%; 
+     top: 2%;
+  }
+  .navbar-logo{
+    width: 140px;
+    top: 5%;
+  }
+  .navbar-center h1{
+    font-size: 18px;
+    text-align: center;
+  }
+  .navbar-right{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    position: relative;
+    left: 5%;
+  }
+  .cart-button{
+    display: none;
+  }
+  .wishlist-button {
+    position: absolute;
+    right: 285px;   
+    z-index: 999;  
+    color: black;
+  }
+  .icon-button svg {
+    width: 22px; /* Reduce icon size */
+    height: 22px;
+    color: black;
+  }
+  .wishlist-button .wishlist-count {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    background-color: red;
+    color: white;
+    font-size: 12px;
+    width: 15px;
+    height: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
   }
 }
 
@@ -284,11 +429,11 @@
      top: 2%;
   }
   .navbar-logo{
-    width: 150px;
+    width: 140px;
     top: 5%;
   }
   .navbar-center h1{
-    font-size: 20px;
+    font-size: 17px;
   }
   .navbar-right{
     display: flex;
@@ -299,6 +444,32 @@
   }
   .cart-button{
     display: none;
+  }
+
+  .wishlist-button {
+    position: absolute;
+    right: 270px;   
+    z-index: 999;  
+    color: black;
+  }
+  .icon-button svg {
+    width: 20px; /* Reduce icon size */
+    height: 20px;
+    color: black;
+  }
+  .wishlist-button .wishlist-count {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    background-color: red;
+    color: white;
+    font-size: 12px;
+    width: 15px;
+    height: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
   }
 }
 

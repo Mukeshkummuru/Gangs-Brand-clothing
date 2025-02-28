@@ -8,6 +8,14 @@
   width: 90%;
 }
 
+.product-grid-search{
+  display: grid;
+  grid-template-columns: repeat(5, minmax(200px, 1fr)); /* Minimum card width of 200px */
+  padding: 20px 30px;
+  column-gap: 15px; 
+  row-gap: 20px; 
+}
+
 /* Floating Search Form */
 .search-form-new {
   display: flex;
@@ -133,15 +141,6 @@
   transform: scale(1.08);
 }
 
-/* Responsive Styles */
-@media (max-width: 1024px) {
-  .search-form-new {
-    max-width: 90%;
-    gap: 10px; /* Keep the horizontal gap between elements */
-    flex-wrap: nowrap; /* Prevent wrapping */
-  }
-}
-
 
 /* No Results Image */
 .no-results {
@@ -157,6 +156,15 @@
   width: 450px; /* Medium Size */
   height: auto;
   margin-bottom: 50px; /* Space between image & text */
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .search-form-new {
+    max-width: 90%;
+    gap: 10px; /* Keep the horizontal gap between elements */
+    flex-wrap: nowrap; /* Prevent wrapping */
+  }
 }
  
 
