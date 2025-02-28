@@ -447,8 +447,8 @@
   }
 
   .wishlist-button {
-    position: absolute;
-    right: 266px;   
+    position: relative;
+    right: 173px;   
     z-index: 999;  
     color: black;
   }
