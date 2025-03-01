@@ -271,7 +271,7 @@
    /* Wishlist Button - Move to Top Left */
    .wishlist-button {
      position: absolute;
-     left:-265px;
+     left:-245px;
    }
 
   .wishlist-button .wishlist-count {
@@ -327,7 +327,7 @@
   /* Wishlist Button - Move to Top Left */
   .wishlist-button {
     position: absolute;
-   left: -255px;
+   left: -235px;
   }
 
   .wishlist-button .wishlist-count {
@@ -383,7 +383,7 @@
   /* Wishlist Button - Move to Top Left */
   .wishlist-button {
     position: absolute;
-    left: -240px;
+    left: -220px;
   }
 
   .wishlist-button .wishlist-count {
@@ -443,7 +443,7 @@
   /* Wishlist Button - Move to Top Left */
   .wishlist-button {
     position: absolute;
-    left: -210px;
+    left: -205px;
   }
 
   .wishlist-button .wishlist-count {
