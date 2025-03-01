@@ -255,6 +255,7 @@
   }
   .navbar-center h1{
     font-size: 20px;
+    margin-right: -10%;
   
   }
   .navbar-right{
@@ -271,7 +272,61 @@
    .wishlist-button {
     position: absolute;
     right: 318px;  /* Adjust this value as needed */
-    z-index: 999; /* Ensure it's above other elements */
+  }
+
+  .wishlist-button .wishlist-count {
+    position: absolute;
+    top: 3px;
+    right: 2px;
+    background-color: red;
+    color: white;
+    font-size: 12px;
+    width: 15px;
+    height: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+  }
+  .icon-button svg{
+    color: black;
+  }
+}
+
+@media (max-width: 414px) {
+  .sidebar {
+    width: 80%;
+  }
+  .navbar{
+    position: fixed;
+    width: 100%;
+    height: 70px;
+  }
+  .navbar-logo-container {
+    position: relative;
+     right: 1%; 
+     top: 2%;
+  }
+  .navbar-logo{
+    width: 150px;
+    top: 5%;
+  }
+  .navbar-center h1{
+    font-size: 19px;
+  }
+  .navbar-right{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    position: relative;
+    left: 5%;
+  }
+  .cart-button{
+    display: none;
+  }
+  /* Wishlist Button - Move to Top Left */
+  .wishlist-button {
+     margin-right: -15%;
   }
 
   .wishlist-button .wishlist-count {
@@ -313,7 +368,6 @@
   }
   .navbar-center h1{
     font-size: 17px;
-     
   }
   .navbar-right{
     display: flex;
@@ -327,9 +381,7 @@
   }
   /* Wishlist Button - Move to Top Left */
   .wishlist-button {
-    position: absolute;
-    right: 280px;  
-    z-index: 999;  
+     margin-right: -40%;
   }
 
   .wishlist-button .wishlist-count {
@@ -388,7 +440,7 @@
   }
   /* Wishlist Button - Move to Top Left */
   .wishlist-button {
-    margin-right: -12%;
+    margin-right: -55%;
   }
 
   .wishlist-button .wishlist-count {
