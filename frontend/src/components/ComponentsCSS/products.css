@@ -63,6 +63,7 @@
   font-size: 12px;
   color: #2e2e2ecc; /* Gray strikethrough */
   text-decoration: line-through;
+  font-family: 'Montserrat', sans-serif;
 }
 
 
@@ -79,6 +80,7 @@
   font-weight: bold;
   color: #28a745; /* Green for discount */
   white-space: nowrap; /* Prevent line breaks */
+  font-family: 'Montserrat', sans-serif;
 }
 
 /* for my loading animation */
