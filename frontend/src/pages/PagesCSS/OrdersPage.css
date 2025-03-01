@@ -229,7 +229,6 @@
   .orders-list {
     grid-template-columns: 1fr; /* Single column */
     justify-content: center; /* Centering */
-    padding: 0; /* Reduce side padding for smaller screens */
   }
 
   .order-card {

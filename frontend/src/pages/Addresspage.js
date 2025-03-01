@@ -27,7 +27,7 @@ const AddressPage = ({ onClose, isOpen }) => {
         payload: { id: editingId, ...formData }
       });
       setEditingId(null);
-      setFormData({ fullname: '', email: '', phone: '', text: '' });
+      setFormData({ fullName: '', email: '', phone: '', text: '' });
     }
   };
 
@@ -48,8 +48,8 @@ const AddressPage = ({ onClose, isOpen }) => {
                 <div>
                   <input
                     type="text"
-                    value={formData.fullname}
-                    onChange={(e) => setFormData({ ...formData, fullname: e.target.value })}
+                    value={formData.fullName}
+                    onChange={(e) => setFormData({ ...formData, fullName: e.target.value })}
                     placeholder="Name"
                   />
                   <input
@@ -74,7 +74,7 @@ const AddressPage = ({ onClose, isOpen }) => {
                 </div>
               ) : (
                 <div>
-                  <p><strong>Name:</strong> {address.fullname}</p>
+                  <p><strong>Name:</strong> {address.fullName}</p>
                   <p><strong>Email:</strong> {address.email}</p>
                   <p><strong>Phone:</strong> {address.phone}</p>
                   <p><strong>Address:</strong> {address.text}</p>
