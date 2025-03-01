@@ -270,9 +270,9 @@
   }
    /* Wishlist Button - Move to Top Left */
    .wishlist-button {
-    position: absolute;
-    right: 318px;  /* Adjust this value as needed */
-  }
+     position: absolute;
+     left:-265px;
+   }
 
   .wishlist-button .wishlist-count {
     position: absolute;
@@ -326,7 +326,8 @@
   }
   /* Wishlist Button - Move to Top Left */
   .wishlist-button {
-     margin-right: -15%;
+    position: absolute;
+   left: -255px;
   }
 
   .wishlist-button .wishlist-count {
@@ -381,7 +382,8 @@
   }
   /* Wishlist Button - Move to Top Left */
   .wishlist-button {
-     margin-right: -40%;
+    position: absolute;
+    left: -240px;
   }
 
   .wishlist-button .wishlist-count {
@@ -440,7 +442,8 @@
   }
   /* Wishlist Button - Move to Top Left */
   .wishlist-button {
-    margin-right: -55%;
+    position: absolute;
+    left: -225px;
   }
 
   .wishlist-button .wishlist-count {
