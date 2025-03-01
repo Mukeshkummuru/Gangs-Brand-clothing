@@ -35,15 +35,17 @@ const ProductCard = ({ product }) => {
       dispatch({ type: "ADD_TO_WISHLIST", payload: product });
     }
   };
-
+ 
   return (
     <LazyLoad height={300} offset={100} placeholder={<div className="skeleton-loader" />}>
       <div className="product-card" onClick={handleClick}>
         <div className="image-container">
           {product.images && product.images.length > 0 ? (
             <OptimizedImage src={product.images[0]} alt={product.name} width={300} height={200} />
+          ) : product.image ? (
+            <OptimizedImage src={product.image} alt={product.name} width={300} height={200} />
           ) : (
-            <div className="image-placeholder">No Image Available</div> // Placeholder if no image exists
+            <div className="image-placeholder">No Image Available</div>
           )}
           <FaHeart
             className={`wishlist-icon ${isInWishlist ? "filled" : ""}`}

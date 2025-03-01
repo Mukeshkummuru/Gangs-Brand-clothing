@@ -11,6 +11,9 @@ const Wishlist = () => {
     window.scrollTo(0, 0); // Scroll to the top when the component mounts
   }, []);
 
+
+  console.log("Wishlist Data:", wishlist); // 🔍 Debugging
+
   return (
     <div className="wishlist-container">
       <h2 className="wishlist-title-new">YOUR WISHLIST</h2>
@@ -19,9 +22,7 @@ const Wishlist = () => {
       ) : (
         <div className="wishlist-grid">
           {wishlist.map((product) => (
-              
               <ProductCard key={product._id} product={product} />
-             
           ))}
         </div>
       )}

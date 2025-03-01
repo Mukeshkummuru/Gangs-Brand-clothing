@@ -9,6 +9,7 @@ import { useCart } from "../Contexts/CartContext";
 import { useAuth } from "../Contexts/AuthContext";
 import AddressPage from "../pages/Addresspage";
 import { useWishlist } from '../Contexts/WishlistContext';
+import { Search, ShoppingBag, Heart, Menu } from "lucide-react"; 
 
 const Navbar = () => {
   const { wishlist } = useWishlist();
@@ -51,20 +52,26 @@ const Navbar = () => {
             <h1>GANGS</h1>
           </div>
 
-          <div className="navbar-right">
-          <button className="icon-button wishlist-button" onClick={() => navigate("/wishlist")}>
-              <FaHeart size={24} />
+            <div className="navbar-right">
+            <button 
+              className={`icon-button wishlist-button ${wishlist.length > 0 ? "active" : ""}`} 
+              onClick={() => navigate("/wishlist")}
+            >
+             <Heart size={24} strokeWidth={1.5} />
               {wishlist.length > 0 && <span className="wishlist-count">{wishlist.length}</span>}
             </button>
-            <button className="icon-button search-button" onClick={handleSearchClick}>
-              <FaSearch size={24} />
+
+            <button className="icon-button search-button" onClick={() => navigate("/search")}>
+              <Search size={24} strokeWidth={1.5} />
             </button>
+
             <button className="icon-button cart-button" onClick={() => navigate("/cart")}>
-              <FaShoppingCart size={24} />
+            <ShoppingBag size={23} strokeWidth={1.5} />
               {cartCount > 0 && <span className="cart-count">{cartCount}</span>}
             </button>
-            <button className="icon-button" onClick={() => setIsOpen(!isOpen)}>
-              {isOpen ? <FiX size={24} /> : <FiMenu size={24} />}
+            
+            <button className="icon-button toggle-button" onClick={() => setIsOpen(!isOpen)}>
+              {isOpen ? <FiX size={24} /> : <Menu size={28} strokeWidth={1.5} />}
             </button>
           </div>
         </div>

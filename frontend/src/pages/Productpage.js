@@ -140,21 +140,29 @@ const ProductPage = ({products}) => {
   };
 
   const handleAddToWishlist = () => {
+    if (!product || !product.images || product.images.length === 0) {
+      toast.error("Product details are missing!");
+      return;
+    }
+  
     const item = {
       _id: product._id, // Use MongoDB ID
       name: product.name,
       price: product.price,
-      image: product.images[0], // Ensure this exists
+      discount_price: product.discount_price, // Include discount price
+      original_price: product.original_price, // Include original price
+      images: product.images[0], // Use first image as default
     };
   
+    console.log("Adding to Wishlist:", item); 
+
     if (wishlist.some((w) => w._id === product._id)) {
       toast.info("Already in Wishlist!");
     } else {
       wishlistDispatch({ type: "ADD_TO_WISHLIST", payload: item });
-      toast.success("Added to Wishlist!");
     }
   };
-
+  
   return (
     <div className="product-page">
       <ToastContainer   

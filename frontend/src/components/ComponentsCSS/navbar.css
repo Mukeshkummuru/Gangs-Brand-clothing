@@ -92,6 +92,52 @@
   font-size: 12px;
 }
 
+.icon-button.toggle-button:hover svg,
+.icon-button.search-button:hover svg,
+.icon-button.wishlist-button:hover svg,
+.icon-button.cart-button:hover svg {
+  stroke: #ff4500; /* Cool orange stroke effect on hover */
+  transform: scale(1.1);
+}
+ 
+.icon-button.wishlist-button svg {
+  transition: all 0.3s ease-in-out;
+}
+
+.icon-button.wishlist-button.active svg {
+  stroke: red; /* Turns the wishlist outline red when active */
+  animation: shake 0.3s ease-in-out;
+}
+
+.icon-button.wishlist-button.active svg {
+  animation: shake 0.3s ease-in-out;
+  text-shadow: 0 0 12px rgba(255, 0, 0, 0.6);
+  transform: scale(1.2);
+}
+
+.wishlist-count {
+  color: rgb(59, 57, 57);
+  font-size: 12px;
+  font-weight: bold; 
+  transform: scale(0);
+  animation: pop 0.3s ease-in-out forwards;
+}
+
+@keyframes shake {
+  0% { transform: scale(1.2) rotate(0deg); }
+  25% { transform: scale(1.2) rotate(-10deg); }
+  50% { transform: scale(1.2) rotate(10deg); }
+  75% { transform: scale(1.2) rotate(-5deg); }
+  100% { transform: scale(1.2) rotate(0deg); }
+}
+
+@keyframes pop {
+  0% { transform: scale(0); opacity: 0; }
+  50% { transform: scale(1.3); opacity: 1; }
+  100% { transform: scale(1); }
+}
+
+
 /* Sidebar styling */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
  
@@ -274,20 +320,21 @@
      left:-245px;
    }
 
-  .wishlist-button .wishlist-count {
+   .wishlist-button .wishlist-count {
     position: absolute;
     top: 3px;
     right: 2px;
-    background-color: red;
+    background-color: rgb(32, 31, 31);
     color: white;
-    font-size: 12px;
+    font-size: 11px;
     width: 15px;
-    height: 15px;
+    height: 14px;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
   }
+
   .icon-button svg{
     color: black;
   }
@@ -334,16 +381,17 @@
     position: absolute;
     top: 3px;
     right: 2px;
-    background-color: red;
+    background-color: rgb(32, 31, 31);
     color: white;
-    font-size: 12px;
+    font-size: 11px;
     width: 15px;
-    height: 15px;
+    height: 14px;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
   }
+
   .icon-button svg{
     color: black;
   }
@@ -390,16 +438,17 @@
     position: absolute;
     top: 3px;
     right: 2px;
-    background-color: red;
+    background-color: rgb(32, 31, 31);
     color: white;
-    font-size: 12px;
+    font-size: 11px;
     width: 15px;
-    height: 15px;
+    height: 14px;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
   }
+
   .icon-button svg{
     color: black;
     width: 20px;
@@ -440,6 +489,7 @@
   .cart-button{
     display: none;
   }
+
   /* Wishlist Button - Move to Top Left */
   .wishlist-button {
     position: absolute;
@@ -450,16 +500,17 @@
     position: absolute;
     top: 3px;
     right: 2px;
-    background-color: red;
+    background-color: rgb(32, 31, 31);
     color: white;
-    font-size: 12px;
+    font-size: 11px;
     width: 15px;
-    height: 15px;
+    height: 14px;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
   }
+
   .icon-button svg{
     color: black;
     width: 20px;
