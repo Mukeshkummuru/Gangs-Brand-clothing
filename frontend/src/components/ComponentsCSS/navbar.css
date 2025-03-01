@@ -442,8 +442,12 @@
   }
   /* Wishlist Button - Move to Top Left */
   .wishlist-button {
+<<<<<<< HEAD
     position: absolute;
     left: -225px;
+=======
+    margin-right: -90%;
+>>>>>>> eda354f825a2aa205172c6f66c356e39dd8d82aa
   }
 
   .wishlist-button .wishlist-count {
