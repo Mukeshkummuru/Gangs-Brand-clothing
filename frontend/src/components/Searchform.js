@@ -38,6 +38,7 @@ const Search = ({ onSearch }) => {
           <option value="pants">Pants</option>
           <option value="sweatshirts">Sweatshirts</option>
           <option value="jackets">Jackets</option>
+          <option value="t-shirts">T-shirts</option>
         </select>
       </form>
     </div>
